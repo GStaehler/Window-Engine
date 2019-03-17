@@ -2,6 +2,8 @@
 
 ![demo](https://github.com/GStaehler/Window_Engine/blob/master/demo.JPG)
 
+---
+
 Welcome to **Window Engine**. Window Engine helps you start projects that need 
 draggable and beautiful custom windows. This project already has two working windows.
 All windows have a structure like that :
@@ -53,3 +55,10 @@ Or like that :
 ~~~~
 <button id="button!"></button>
 ~~~~
+
+### Third party libraries
+
+The libraries used in **Window Engine** :
+- Bootstrap 4.3.1
+- jQuery 3.3.1
+- FontAwesome 5.7.2
