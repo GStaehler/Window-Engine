@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Gauthier Staehler"> <!-- MADE BY GAUTHIER STAEHLER -->
+	<meta name="description" content="Window Engine helps you start projects that need draggable and beautiful custom windows">
+	<meta name="keywords" content="HTML,CSS,JavaScript,Window">
+	<title>Window Engine</title>
+	<link rel="stylesheet" href="window_engine/window_engine.css">
+	<link rel="stylesheet" href="vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<script src="vendor/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<p id="version">Window Engine 1.0</p>
+	</header>
+
+	<main id="desktop" class="d-flex justify-content-center">
+		
+		<!----------------->
+		<!---- WINDOW 1 --->
+		<!----------------->
+		
+		<div id="mydiv" class="mydiv">
+			<div id="mydivheader" class="d-flex justify-content-between mydivheader">
+				<p class="windowTitle">Window Engine</p>
+				<i id="closeButton" class="far fa-times-circle"></i>
+			</div>
+			<div class="mainWindow">
+				<p>Welcome to Window Engine !</p>
+				<p>Window Engine helps you start projects that need draggable and beautiful custom windows.</p>
+				<div class="spinner-grow spinner-grow-sm text-danger"></div>
+			</div>
+		</div>
+		
+		<!----------------->
+		<!---- WINDOW 2 --->
+		<!----------------->
+		
+		<div id="mydiv2" class="mydiv" style="display: none;">
+			<div id="mydiv2header" class="d-flex justify-content-between mydivheader">
+				<p class="windowTitle">Another Window</p>
+				<i id="closeButton2" class="far fa-times-circle"></i>
+			</div>
+			<div class="mainWindow"></div>
+		</div>
+		
+		<!-- ADD ANOTHER WINDOW HERE -->
+		
+	</main>
+
+	<footer id="footer" class="d-flex justify-content-start">
+		<i id="button1" class="far fa-window-maximize fa-2x"></i>
+		<i id="button2" class="fas fa-window-maximize fa-2x"></i>
+		<!-- ADD A BUTTON TO OPEN A NEW WINDOW -->
+	</footer>
+
+</body>
+
+</html>
+
+<script src="window_engine/window_engine.js"></script>
