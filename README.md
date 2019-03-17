@@ -1,6 +1,6 @@
 # Window Engine
 
-![demo](demo.jpg)
+![demo](https://github.com/GStaehler/Window_Engine/blob/master/demo.JPG)
 
 Welcome to **Window Engine**. Window Engine helps you start projects that need 
 draggable and beautiful custom windows. This project already has two working windows.
