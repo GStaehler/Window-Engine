@@ -45,7 +45,6 @@ $(document).on("click", "#button2", function () {
 dragElement(document.getElementById("mydiv2"));
 
 
-
 // DRAGGABLE WINDOWS
 
 function dragElement(elmnt) {
@@ -66,6 +65,11 @@ function dragElement(elmnt) {
 		pos4 = e.clientY;
 		document.onmouseup = closeDragElement;
 		document.onmousemove = elementDrag;
+		var active = document.getElementsByClassName("mydiv");
+		for (var i = active.length - 1; i > -1; i--) {
+			active[i].classList.remove("mydivActive");
+		}
+		document.getElementById(elmnt.id).className += " mydivActive";
 	}
 
 	function elementDrag(e) {

@@ -24,6 +24,10 @@
 	cursor: default;
 }
 
+.mydivActive {
+	z-index: 100;
+}
+
 .windowTitle {
 	position: relative;
 	bottom: 2px;
