@@ -1,27 +1,3 @@
-// DISPLAYING WINDOWS
-
-function windowCreation(id) {
-
-var isOut;
-
-$(document).on("click", "#closeButton" + id, function () {
-	$("#mydiv" + id).fadeOut(500, "swing");
-	isOut = true;
-});
-
-$(document).on("click", "#button" + id, function () {
-	if (isOut) {
-		document.getElementById("mydiv" + id).style = "position: absolute";
-		document.getElementById("mydiv" + id).style = "top: 80px;";
-	}
-	isOut = false;
-	$("#mydiv" + id).fadeIn(500, "swing");
-});
-
-dragElement(document.getElementById("mydiv" + id));
-    
-}
-
 // WINDOW 1 //
 windowCreation(1);
 
@@ -31,9 +7,26 @@ windowCreation(2);
 // WINDOW 3 //
 windowCreation(3);
 
-// DRAGGABLE WINDOWS
+/////////////////////////////////////////////////////////////
 
-function dragElement(elmnt) {
+function windowCreation(id) {
+	var isOut;
+	$(document).on("click", "#closeButton" + id, function () {
+		$("#mydiv" + id).fadeOut(500, "swing");
+		isOut = true;
+	});
+	$(document).on("click", "#button" + id, function () {
+		if (isOut) {
+			document.getElementById("mydiv" + id).style = "position: absolute";
+			document.getElementById("mydiv" + id).style = "top: 80px;";
+		}
+		isOut = false;
+		$("#mydiv" + id).fadeIn(500, "swing");
+	});
+	dragElement(document.getElementById("mydiv" + id));
+}
+
+function dragElement(elmnt) { // DRAGGABLE WINDOWS
 	var pos1 = 0,
 		pos2 = 0,
 		pos3 = 0,
