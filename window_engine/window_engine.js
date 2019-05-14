@@ -1,70 +1,35 @@
 // DISPLAYING WINDOWS
 
-//////////////
-// WINDOW 1 //
-//////////////
+function windowCreation(id) {
 
 var isOut;
 
-$(document).on("click", "#closeButton", function () {
-	$("#mydiv").fadeOut(500, "swing");
+$(document).on("click", "#closeButton" + id, function () {
+	$("#mydiv" + id).fadeOut(500, "swing");
 	isOut = true;
 });
 
-$(document).on("click", "#button1", function () {
+$(document).on("click", "#button" + id, function () {
 	if (isOut) {
-		document.getElementById("mydiv").style = "position: absolute";
-		document.getElementById("mydiv").style = "top: 80px;";
+		document.getElementById("mydiv" + id).style = "position: absolute";
+		document.getElementById("mydiv" + id).style = "top: 80px;";
 	}
 	isOut = false;
-	$("#mydiv").fadeIn(500, "swing");
+	$("#mydiv" + id).fadeIn(500, "swing");
 });
 
-dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("mydiv" + id));
+    
+}
 
-//////////////
+// WINDOW 1 //
+windowCreation(1);
+
 // WINDOW 2 //
-//////////////
+windowCreation(2);
 
-var isOut2;
-
-$(document).on("click", "#closeButton2", function () {
-	$("#mydiv2").fadeOut(500, "swing");
-	isOut2 = true;
-});
-
-$(document).on("click", "#button2", function () {
-	if (isOut2) {
-		document.getElementById("mydiv2").style = "position: absolute";
-		document.getElementById("mydiv2").style = "top: 80px;";
-	}
-	isOut2 = false;
-	$("#mydiv2").fadeIn(500, "swing");
-});
-
-dragElement(document.getElementById("mydiv2"));
-
-//////////////
 // WINDOW 3 //
-//////////////
-
-var isOut3;
-
-$(document).on("click", "#closeButton3", function () {
-	$("#mydiv3").fadeOut(500, "swing");
-	isOut3 = true;
-});
-
-$(document).on("click", "#button3", function () {
-	if (isOut3) {
-		document.getElementById("mydiv3").style = "position: absolute";
-		document.getElementById("mydiv3").style = "top: 80px;";
-	}
-	isOut3 = false;
-	$("#mydiv3").fadeIn(500, "swing");
-});
-
-dragElement(document.getElementById("mydiv3"));
+windowCreation(3);
 
 // DRAGGABLE WINDOWS
 
