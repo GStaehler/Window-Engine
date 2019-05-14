@@ -90,7 +90,6 @@ body {
 	cursor: default;
 }
 
-#button1,
-#button2 {
+[id^="button"] {
 	margin-left: 12px;
 }

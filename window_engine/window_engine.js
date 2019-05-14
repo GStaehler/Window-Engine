@@ -44,6 +44,27 @@ $(document).on("click", "#button2", function () {
 
 dragElement(document.getElementById("mydiv2"));
 
+//////////////
+// WINDOW 3 //
+//////////////
+
+var isOut3;
+
+$(document).on("click", "#closeButton3", function () {
+	$("#mydiv3").fadeOut(500, "swing");
+	isOut3 = true;
+});
+
+$(document).on("click", "#button3", function () {
+	if (isOut3) {
+		document.getElementById("mydiv3").style = "position: absolute";
+		document.getElementById("mydiv3").style = "top: 80px;";
+	}
+	isOut3 = false;
+	$("#mydiv3").fadeIn(500, "swing");
+});
+
+dragElement(document.getElementById("mydiv3"));
 
 // DRAGGABLE WINDOWS
 
