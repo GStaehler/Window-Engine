@@ -12,7 +12,7 @@ windowCreation(3);
 function windowCreation(id) {
 	var isOut;
 	$(document).on("click", "#closeButton" + id, function () {
-		$("#mydiv" + id).fadeOut(500, "swing");
+		$("#mydiv" + id).fadeOut(300, "swing");
 		isOut = true;
 	});
 	$(document).on("click", "#button" + id, function () {
@@ -21,7 +21,7 @@ function windowCreation(id) {
 			document.getElementById("mydiv" + id).style = "top: 80px;";
 		}
 		isOut = false;
-		$("#mydiv" + id).fadeIn(500, "swing");
+		$("#mydiv" + id).fadeIn(300, "swing");
 	});
 	dragElement(document.getElementById("mydiv" + id));
 }
