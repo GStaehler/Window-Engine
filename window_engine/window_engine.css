@@ -1,5 +1,3 @@
-/* WINDOW STYLE */
-
 .mydiv {
 	position: absolute;
 	top: 80px;
@@ -10,9 +8,8 @@
 	border-radius: 8px 8px 0px 0px;
 	box-shadow: 8px 8px 6px -6px black;
 	opacity: 0.9;
+	display: none;
 }
-
-/* WINDOW HEADER STYLE */
 
 .mydivheader {
 	padding: 10px;
@@ -21,7 +18,8 @@
 	color: #fff;
 	border-radius: 4px 4px 0px 0px;
 	height: 40px;
-	cursor: default;
+	justify-content: space-between !important;
+	display: flex !important;
 }
 
 .mydivActive {
@@ -33,8 +31,6 @@
 	bottom: 2px;
 }
 
-/* WINDOW MAIN CONTENT */
-
 .mainWindow {
 	padding: 20px;
 }
@@ -42,6 +38,9 @@
 body {
 	background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
 	background-size: cover;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
 }
 
 footer {
@@ -53,6 +52,8 @@ footer {
 	padding: 4px;
 	padding-left: 8px;
 	box-shadow: 2px 2px 2px 2px black;
+	justify-content: flex-start !important;
+	display: flex !important;
 }
 
 header {
@@ -79,17 +80,15 @@ header {
 	left: 8px;
 }
 
-html,
-body {
-	margin: 0;
-	height: 100%;
-	overflow: hidden
-}
-
-#version {
+p {
 	cursor: default;
 }
 
 [id^="button"] {
 	margin-left: 12px;
+}
+
+main {
+	justify-content: center !important;
+	display: flex !important;
 }

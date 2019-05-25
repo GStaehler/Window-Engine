@@ -9,12 +9,12 @@ draggable and beautiful custom windows. This project already has three working w
 All windows have a structure like that :
 
 ```html
-<div id="mydiv!" class="mydiv" style="display: none;">
-	<div id="mydiv!header" class="d-flex justify-content-between mydivheader">
-			<p class="windowTitle">Another Window</p>
+<div id="mydiv!" class="mydiv">
+	<div id="mydiv!header" class="mydivheader">
+			<p class="windowTitle">Title</p>
 			<i id="closeButton!" class="far fa-times-circle"></i>
 	</div>
-	<div class="mainWindow"></div>
+	<div class="mainWindow">Content</div>
 </div>
 ```
 *! is the number of the window*
@@ -33,5 +33,5 @@ You can add another button to open you new window :
 
 The libraries used in **Window Engine** :
 - Bootstrap 4.3.1
-- jQuery 3.3.1
+- jQuery 3.4.1
 - FontAwesome 5.7.2
