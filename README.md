@@ -32,6 +32,5 @@ You can add another button to open you new window :
 ### Third party libraries
 
 The libraries used in **Window Engine** :
-- Bootstrap 4.3.1
 - jQuery 3.4.1
-- FontAwesome 5.7.2
+- FontAwesome 5.8.2

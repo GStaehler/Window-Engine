@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 .mydiv {
 	position: absolute;
 	top: 80px;
@@ -41,6 +47,10 @@ body {
 	margin: 0;
 	height: 100%;
 	overflow: hidden;
+	font-family: "Segoe UI";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
 }
 
 footer {
@@ -53,7 +63,7 @@ footer {
 	padding-left: 8px;
 	box-shadow: 2px 2px 2px 2px black;
 	justify-content: flex-start !important;
-	display: flex !important;
+	display: block;
 }
 
 header {
@@ -66,6 +76,7 @@ header {
 	padding: 4px;
 	color: white;
 	font-size: 12px;
+	display: block;
 }
 
 .fab,
@@ -82,10 +93,12 @@ header {
 
 p {
 	cursor: default;
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
 [id^="button"] {
-	margin-left: 12px;
+	margin-left: 8px;
 }
 
 main {
