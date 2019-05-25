@@ -1,13 +1,6 @@
-// WINDOW 1 //
-windowCreation(1);
-
-// WINDOW 2 //
-windowCreation(2);
-
-// WINDOW 3 //
-windowCreation(3);
-
-/////////////////////////////////////////////////////////////
+for (i = 1; i < 1000; i++) {
+	windowCreation(i);
+}
 
 function windowCreation(id) {
 	var isOut;
@@ -26,7 +19,7 @@ function windowCreation(id) {
 	dragElement(document.getElementById("mydiv" + id));
 }
 
-function dragElement(elmnt) { // DRAGGABLE WINDOWS
+function dragElement(elmnt) {
 	var pos1 = 0,
 		pos2 = 0,
 		pos3 = 0,

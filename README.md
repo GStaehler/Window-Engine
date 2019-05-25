@@ -22,13 +22,8 @@ All windows have a structure like that :
 ### Add a new window
 
 To add a new window, copy the structure above in your html and change ! (if this is your third window, ! = 3 for example)
-Then, in window_engine.js, copy that code and change ! to match with your window in the html file :
 
-~~~~
-windowCreation(!);
-~~~~
-
-You can add another button to open you new window, like this :
+You can add another button to open you new window :
 
 ~~~~
 <i id="button!"></i>
