@@ -8,7 +8,7 @@ Welcome to **Window Engine**. Window Engine helps you start projects that need
 draggable and beautiful custom windows. This project already has three working windows.
 All windows have a structure like that :
 
-~~~~
+```html
 <div id="mydiv!" class="mydiv" style="display: none;">
 	<div id="mydiv!header" class="d-flex justify-content-between mydivheader">
 			<p class="windowTitle">Another Window</p>
@@ -16,7 +16,7 @@ All windows have a structure like that :
 	</div>
 	<div class="mainWindow"></div>
 </div>
-~~~~
+```
 *! is the number of the window*
 
 ### Add a new window
@@ -25,9 +25,9 @@ To add a new window, copy the structure above in your html and change ! (if this
 
 You can add another button to open you new window :
 
-~~~~
+```html
 <i id="button!"></i>
-~~~~
+```
 
 ### Third party libraries
 
