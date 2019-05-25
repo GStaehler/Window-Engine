@@ -11,8 +11,8 @@ All windows have a structure like that :
 ```html
 <div id="mydiv!" class="mydiv">
 	<div id="mydiv!header" class="mydivheader">
-			<p class="windowTitle">Title</p>
-			<i id="closeButton!" class="far fa-times-circle"></i>
+		<p class="windowTitle">Title</p>
+		<i id="closeButton!" class="far fa-times-circle"></i>
 	</div>
 	<div class="mainWindow">Content</div>
 </div>
