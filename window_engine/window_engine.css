@@ -86,11 +86,6 @@ header {
 	cursor: pointer;
 }
 
-.spinner-grow {
-	position: relative;
-	left: 8px;
-}
-
 p {
 	cursor: default;
 	margin-top: 0;
