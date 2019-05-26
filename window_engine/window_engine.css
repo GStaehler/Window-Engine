@@ -39,3 +39,11 @@
 	padding: 20px;
 	cursor: default;
 }
+
+[id^="closeButton"] {
+	color: white;
+	cursor: pointer;
+	position: relative;
+	bottom: 9px;
+	font-size: 24px;
+}

@@ -12,7 +12,7 @@ All windows have that structure :
 <div id="mydiv!" class="mydiv">
 	<div id="mydiv!header" class="mydivheader">
 		<p class="windowTitle">Title</p>
-		<i id="closeButton!" class="far fa-times-circle"></i>
+		<b id="closeButton!">&times;</b>
 	</div>
 	<div class="mainWindow">Content</div>
 </div>
@@ -26,10 +26,5 @@ To add a new window, copy the structure above in your html and change ! (if this
 You can add another button to open you new window :
 
 ```html
-<i id="button!"></i>
+<span id="button!"></span>
 ```
-
-### Third party libraries
-
-The libraries used in **Window Engine** :
-- FontAwesome 5.8.2
