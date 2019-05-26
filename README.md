@@ -6,7 +6,7 @@
 
 Welcome to **Window Engine**. Window Engine helps you start projects that need 
 draggable and beautiful custom windows. This project already has three working windows.
-All windows have a structure like that :
+All windows have that structure :
 
 ```html
 <div id="mydiv!" class="mydiv">
@@ -32,5 +32,4 @@ You can add another button to open you new window :
 ### Third party libraries
 
 The libraries used in **Window Engine** :
-- jQuery 3.4.1
 - FontAwesome 5.8.2

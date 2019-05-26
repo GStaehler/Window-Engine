@@ -6,19 +6,23 @@ for (i = 1; i < 1000; i++) {
 
 function windowCreation(id) {
 	var isOut;
-	$(document).on("click", "#closeButton" + id, function () {
-		$("#mydiv" + id).fadeOut(300, "swing");
+	document.getElementById("closeButton" + id).onclick = function () {
+		fadeOut(document.getElementById("mydiv" + id), 300);
 		isOut = true;
-	});
-	$(document).on("click", "#button" + id, function () {
+	};
+	document.getElementById("button" + id).onclick = function () {
+		if (document.getElementById("mydiv" + id).style.display === "initial") {
+			isOut = false;
+		}
 		if (isOut) {
-			document.getElementById("mydiv" + id).style = "position: absolute";
+			document.getElementById("mydiv" + id).style = "position: absolute;";
 			document.getElementById("mydiv" + id).style = "top: 80px;";
+			fadeIn(document.getElementById("mydiv" + id), 300);
 		}
 		isOut = false;
-		$("#mydiv" + id).fadeIn(300, "swing");
-	});
+	};
 	dragElement(document.getElementById("mydiv" + id));
+	isOut = true;
 }
 
 function dragElement(elmnt) {
@@ -60,5 +64,55 @@ function dragElement(elmnt) {
 	function closeDragElement() {
 		document.onmouseup = null;
 		document.onmousemove = null;
+	}
+}
+
+function fadeIn(elem, ms) {
+	elem.style.opacity = 0;
+	elem.style.filter = "alpha(opacity=0)";
+	elem.style.display = "inline-block";
+	elem.style.visibility = "visible";
+
+	if (ms) {
+		var opacity = 0;
+		var timer = setInterval(function () {
+			opacity += 50 / ms;
+			if (opacity >= 1) {
+				clearInterval(timer);
+				opacity = 0.9;
+			}
+			elem.style.opacity = opacity;
+			elem.style.filter = "alpha(opacity=" + opacity * 100 + ")";
+			var active = document.getElementsByClassName("mydiv");
+			for (var i = active.length - 1; i > -1; i--) {
+				active[i].classList.remove("mydivActive");
+			}
+			elem.className += " mydivActive";
+		}, 50);
+	} else {
+		elem.style.opacity = 1;
+		elem.style.filter = "alpha(opacity=1)";
+	}
+}
+
+function fadeOut(elem, ms) {
+	if (ms) {
+		var opacity = 1;
+		var timer = setInterval(function () {
+			opacity -= 50 / ms;
+			if (opacity <= 0) {
+				clearInterval(timer);
+				opacity = 0;
+				elem.style.display = "none";
+				elem.style.visibility = "hidden";
+			}
+			elem.style.opacity = opacity;
+			elem.style.filter = "alpha(opacity=" + opacity * 100 + ")";
+		}, 50);
+	} else {
+		elem.style.opacity = 0;
+		elem.style.filter = "alpha(opacity=0)";
+		elem.style.display = "none";
+		elem.style.visibility = "hidden";
 	}
 }
