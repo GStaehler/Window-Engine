@@ -1,5 +1,7 @@
 # Window Engine
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE)
+
 ![demo](https://github.com/GStaehler/Window_Engine/blob/master/demo.JPG)    
 
 Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by Gauthier Staehler, for draggable and beautiful windows.
