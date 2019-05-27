@@ -33,7 +33,3 @@ You can add another button to open you new window :
 ```html
 <span id="button!"></span>
 ```
-
-### Copyright and License
-
-Code and documentation copyright Gauthier Staehler. Code released under the [MIT License](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE).
