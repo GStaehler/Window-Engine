@@ -39,3 +39,7 @@ Example :
 ```html
 <div id="mydiv!header" class="mydivheader purple">
 ```
+
+### Copyright and License
+
+Code and documentation copyright Gauthier Staehler. Code released under the [MIT License](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE).
