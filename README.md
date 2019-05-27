@@ -15,7 +15,9 @@ All windows have that structure :
 </div>
 ```
 *! is the number of the window*
+
 *color is the color of the window : purple, orange, brown, cyan, crimson, green*
+
 *if no color, the window is black*
 
 ### Add a new window
