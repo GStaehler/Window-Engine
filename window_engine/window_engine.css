@@ -1,49 +1,73 @@
 .mydiv {
-	position: absolute;
-	top: 80px;
-	z-index: 9;
-	background-color: #f1f1f1;
-	width: 800px;
-	height: 400px;
-	border-radius: 8px 8px 0px 0px;
-	box-shadow: 8px 8px 6px -6px black;
-	opacity: 0.9;
-	display: none;
+    position: absolute;
+    top: 80px;
+    z-index: 9;
+    background-color: #f1f1f1;
+    width: 800px;
+    height: 400px;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 8px 8px 6px -6px black;
+    opacity: 0.9;
+    display: none;
 }
 
 .mydivheader {
-	padding: 10px;
-	z-index: 10;
-	background-color: rebeccapurple;
-	color: #fff;
-	border-radius: 4px 4px 0px 0px;
-	height: 40px;
-	justify-content: space-between !important;
-	display: flex !important;
+    padding: 10px;
+    z-index: 10;
+    background-color: black;
+    color: #fff;
+    border-radius: 4px 4px 0px 0px;
+    height: 40px;
+    justify-content: space-between !important;
+    display: flex !important;
 }
 
 .mydivheader p {
-	cursor: default;
+    cursor: default;
 }
 
 .mydivActive {
-	z-index: 100;
+    z-index: 100;
 }
 
 .windowTitle {
-	position: relative;
-	bottom: 2px;
+    position: relative;
+    bottom: 2px;
 }
 
 .mainWindow {
-	padding: 20px;
-	cursor: default;
+    padding: 20px;
+    cursor: default;
 }
 
 [id^="closeButton"] {
-	color: white;
-	cursor: pointer;
-	position: relative;
-	bottom: 9px;
-	font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    bottom: 9px;
+    font-size: 24px;
+}
+
+.purple {
+    background-color: rebeccapurple;
+}
+
+.orange {
+    background-color: burlywood;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.cyan {
+    background-color: darkcyan;
+}
+
+.crimson {
+    background-color: crimson;
+}
+
+.green {
+    background-color: darkgreen;
 }

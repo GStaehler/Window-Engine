@@ -5,12 +5,12 @@
 ---
 
 Welcome to **Window Engine**. Window Engine helps you start projects that need 
-draggable and beautiful custom windows. This project already has three working windows.
+draggable and beautiful custom windows.
 All windows have that structure :
 
 ```html
 <div id="mydiv!" class="mydiv">
-	<div id="mydiv!header" class="mydivheader">
+	<div id="mydiv!header" class="mydivheader color">
 		<p class="windowTitle">Title</p>
 		<b id="closeButton!">&times;</b>
 	</div>
@@ -28,3 +28,12 @@ You can add another button to open you new window :
 ```html
 <span id="button!"></span>
 ```
+
+Colors :
+- Black (default)
+- Purple
+- Orange
+- Brown
+- Cyan
+- Crimson
+- Green
