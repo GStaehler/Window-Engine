@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/github/license/GStaehler/Window-Engine.svg?color=brightgreen&label=License)](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE)
 [![Version](https://img.shields.io/github/release/GStaehler/Window-Engine.svg?color=Brightgreen&label=Version)](https://github.com/GStaehler/Window-Engine/releases)
+[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window_engine/window_engine.min.js.svg?color=ff69b4&label=window_engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/window_engine/window_engine.min.js)
+[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window_engine/window_engine.css.svg?color=ff69b4&label=window_engine.css)](https://github.com/GStaehler/Window-Engine/blob/master/window_engine/window_engine.css)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-Brightgreen.svg)](https://www.paypal.me/GauthierStaehler)
 
 ![demo](https://github.com/GStaehler/Window_Engine/blob/master/demo.JPG)    
