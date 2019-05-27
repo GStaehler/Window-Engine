@@ -15,6 +15,8 @@ All windows have that structure :
 </div>
 ```
 *! is the number of the window*
+*color is the color of the window : purple, orange, brown, cyan, crimson, green*
+*if no color, the window is black*
 
 ### Add a new window
 
@@ -24,20 +26,6 @@ You can add another button to open you new window :
 
 ```html
 <span id="button!"></span>
-```
-
-Colors :
-- black (default)
-- .purple
-- .orange
-- .brown
-- .cyan
-- .crimson
-- .green
-
-Example :
-```html
-<div id="mydiv!header" class="mydivheader purple">
 ```
 
 ### Copyright and License
