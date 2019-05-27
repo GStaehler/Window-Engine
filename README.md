@@ -1,6 +1,8 @@
 # Window Engine
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE)
+
+[![Version: v1.9](https://img.shields.io/badge/version-v1.9-brightgreen.svg)]
 
 ![demo](https://github.com/GStaehler/Window_Engine/blob/master/demo.JPG)    
 
