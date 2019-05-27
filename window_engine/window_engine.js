@@ -7,7 +7,7 @@ for (i = 1; i < 1000; i++) {
 function windowCreation(id) {
 	var isOut;
 	document.getElementById("closeButton" + id).onclick = function () {
-		fadeOut(document.getElementById("mydiv" + id), 300);
+		fadeOut(document.getElementById("mydiv" + id), 50);
 		isOut = true;
 	};
 	document.getElementById("button" + id).onclick = function () {
@@ -17,7 +17,7 @@ function windowCreation(id) {
 		if (isOut) {
 			document.getElementById("mydiv" + id).style = "position: absolute;";
 			document.getElementById("mydiv" + id).style = "top: 80px;";
-			fadeIn(document.getElementById("mydiv" + id), 300);
+			fadeIn(document.getElementById("mydiv" + id), 50);
 		}
 		isOut = false;
 	};
