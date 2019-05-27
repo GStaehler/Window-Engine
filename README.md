@@ -4,8 +4,7 @@
 
 ---
 
-Welcome to **Window Engine**. Window Engine helps you start projects that need 
-draggable and beautiful custom windows.
+Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by Gauthier Staehler, for draggable and beautiful windows.
 All windows have that structure :
 
 ```html
@@ -30,10 +29,15 @@ You can add another button to open you new window :
 ```
 
 Colors :
-- Black (default)
-- Purple
-- Orange
-- Brown
-- Cyan
-- Crimson
-- Green
+- black (default)
+- .purple
+- .orange
+- .brown
+- .cyan
+- .crimson
+- .green
+
+Example :
+```html
+<div id="mydiv!header" class="mydivheader purple">
+```
