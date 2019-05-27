@@ -1,7 +1,7 @@
 # Window Engine
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE)
-[![Version: v1.9](https://img.shields.io/badge/Version-v1.9-brightgreen.svg)](#)
+[![Version: v1.9](https://img.shields.io/badge/dynamic/json.svg?color=brightgreen&label=Version&query=name&url=https%3A%2F%2Fapi.github.com%2Frepos%2FGStaehler%2FWindow-Engine%2Freleases%2Flatest)](#)
 
 ![demo](https://github.com/GStaehler/Window_Engine/blob/master/demo.JPG)    
 
