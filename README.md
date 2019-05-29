@@ -6,7 +6,7 @@
 [![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window_engine/window_engine.min.js.svg?color=green&label=window_engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/window_engine/window_engine.min.js)
 [![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window_engine/window_engine.css.svg?color=green&label=window_engine.css)](https://github.com/GStaehler/Window-Engine/blob/master/window_engine/window_engine.css)
 
-![Demo](https://github.com/GStaehler/Window-Engine/blob/master/window.png)
+![Demo](https://gstaehler.github.io/window_engine/window.png)
 
 Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by **Gauthier Staehler**, for draggable and beautiful windows.
 
