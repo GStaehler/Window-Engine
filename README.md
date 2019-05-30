@@ -57,3 +57,5 @@ You can add a fade effect on the windows with the class "fade" :
 You can support the project by making a donation !
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-Brightgreen.svg)](https://www.paypal.me/GauthierStaehler)
+
+Copyright **Gauthier Staehler**
