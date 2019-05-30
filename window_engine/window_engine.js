@@ -73,10 +73,10 @@ function fadeIn(elem, ms) {
 	elem.style.display = "inline-block";
 	elem.style.visibility = "visible";
 
-	if (ms) {
+	if (elem.classList.contains("fade")) {
 		var opacity = 0;
 		var timer = setInterval(function () {
-			opacity += 50 / ms;
+			opacity += 10 / ms;
 			if (opacity >= 1) {
 				clearInterval(timer);
 				opacity = 0.9;
@@ -90,16 +90,20 @@ function fadeIn(elem, ms) {
 			elem.className += " mydivActive";
 		}, 50);
 	} else {
-		elem.style.opacity = 1;
-		elem.style.filter = "alpha(opacity=1)";
+		elem.style.opacity = 0.9;
+		var active = document.getElementsByClassName("mydiv");
+		for (var i = active.length - 1; i > -1; i--) {
+			active[i].classList.remove("mydivActive");
+		}
+		elem.className += " mydivActive";
 	}
 }
 
 function fadeOut(elem, ms) {
-	if (ms) {
+	if (elem.classList.contains("fade")) {
 		var opacity = 1;
 		var timer = setInterval(function () {
-			opacity -= 50 / ms;
+			opacity -= 10 / ms;
 			if (opacity <= 0) {
 				clearInterval(timer);
 				opacity = 0;
@@ -111,8 +115,12 @@ function fadeOut(elem, ms) {
 		}, 50);
 	} else {
 		elem.style.opacity = 0;
-		elem.style.filter = "alpha(opacity=0)";
 		elem.style.display = "none";
 		elem.style.visibility = "hidden";
+		var active = document.getElementsByClassName("mydiv");
+		for (var i = active.length - 1; i > -1; i--) {
+			active[i].classList.remove("mydivActive");
+		}
+		elem.className += " mydivActive";
 	}
 }

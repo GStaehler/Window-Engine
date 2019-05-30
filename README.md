@@ -13,8 +13,8 @@ Welcome to **Window Engine**.  Window Engine is a lightweight javascript library
 ### Installation
 
 ```html
-<link rel="stylesheet" href="../window_engine.css">
-<script src="../window_engine.min.js"></script>
+<link rel="stylesheet" href="window_engine/window_engine.css">
+<script src="window_engine/window_engine.min.js"></script> // End of your file
 ```
 
 ### Structure of a window
@@ -42,4 +42,12 @@ You can add another button to open you new window :
 
 ```html
 <span id="button!"></span>
+```
+
+### Fade effect
+
+You can add a fade effect on the windows with the class "fade" :
+
+```html
+<div id="mydiv!" class="mydiv fade">
 ```
