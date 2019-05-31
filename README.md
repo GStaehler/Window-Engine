@@ -41,7 +41,7 @@ To add a new window, copy the structure above in your html and change ! (if this
 You can add another button to open you new window :
 
 ```html
-<span id="button!"></span>
+<button id="button!"></button>
 ```
 
 ### Fade effect
