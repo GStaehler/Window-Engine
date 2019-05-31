@@ -79,7 +79,7 @@ Of course you can combine it with the fade effect :
 ```html
 <div class="windowGroup">
 
-	<!---- WINDOW 1 --->
+	<!-- WINDOW 1 -->
 
 	<div id="mydiv1" class="mydiv" style="display: initial;">
 		<div id="mydiv1header" class="mydivheader purple">
@@ -92,7 +92,7 @@ Of course you can combine it with the fade effect :
 		</div>
 	</div>
 
-	<!---- WINDOW 2 --->
+	<!-- WINDOW 2 -->
 
 	<div id="mydiv2" class="mydiv fade">
 		<div id="mydiv2header" class="mydivheader cyan">
@@ -105,7 +105,7 @@ Of course you can combine it with the fade effect :
 		</div>
 	</div>
 
-	<!---- WINDOW 3 --->
+	<!-- WINDOW 3 -->
 
 	<div id="mydiv3" class="mydiv fade">
 		<div id="mydiv3header" class="mydivheader brown">
