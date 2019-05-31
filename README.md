@@ -12,9 +12,18 @@ Welcome to **Window Engine**.  Window Engine is a lightweight javascript library
 
 ### Installation
 
+Download :
+
 ```html
 <link rel="stylesheet" href="window_engine/window_engine.css">
 <script src="window_engine/window_engine.min.js"></script> // End of your file
+```
+
+OR Test it first :
+
+```html
+<link rel="stylesheet" href="https://gstaehler.github.io/window_engine/cdn/window_engine.css">
+<script src="https://gstaehler.github.io/window_engine/cdn/window_engine.min.js"></script> // End of your file
 ```
 
 ### Structure of a window
