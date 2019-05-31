@@ -69,10 +69,8 @@ function dragElement(elmnt) {
 
 function fadeIn(elem, ms) {
 	elem.style.opacity = 0;
-	elem.style.filter = "alpha(opacity=0)";
-	elem.style.display = "inline-block";
+	elem.style.display = "initial";
 	elem.style.visibility = "visible";
-
 	if (elem.classList.contains("fade")) {
 		var opacity = 0;
 		var timer = setInterval(function () {
@@ -82,7 +80,6 @@ function fadeIn(elem, ms) {
 				opacity = 0.9;
 			}
 			elem.style.opacity = opacity;
-			elem.style.filter = "alpha(opacity=" + opacity * 100 + ")";
 			var active = document.getElementsByClassName("mydiv");
 			for (var i = active.length - 1; i > -1; i--) {
 				active[i].classList.remove("mydivActive");
@@ -111,7 +108,6 @@ function fadeOut(elem, ms) {
 				elem.style.visibility = "hidden";
 			}
 			elem.style.opacity = opacity;
-			elem.style.filter = "alpha(opacity=" + opacity * 100 + ")";
 		}, 50);
 	} else {
 		elem.style.opacity = 0;
