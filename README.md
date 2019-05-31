@@ -54,16 +54,16 @@ You can add a fade effect on the windows with the class "fade" :
 
 ### Display
 
-If you want your window to be visible without clicking on a button :
+If you want your window to be visible without clicking on a button the first time :
 
 ```html
-<div id="mydiv!" class="mydiv visible">
+<div id="mydiv!" class="mydiv" style="display: initial;">
 ```
 
-Of course you can combine the classes :
+Of course you can combine it with the fade effect :
 
 ```html
-<div id="mydiv!" class="mydiv fade visible">
+<div id="mydiv!" class="mydiv fade" style="display: initial;">
 ```
 
 #### Donation
