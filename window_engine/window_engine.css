@@ -48,6 +48,11 @@
 	font-size: 24px;
 }
 
+.windowGroup {
+    justify-content: center !important;
+    display: flex !important;
+}
+
 .purple {
 	background-color: rebeccapurple;
 }

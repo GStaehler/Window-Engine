@@ -70,7 +70,6 @@ function dragElement(elmnt) {
 function fadeIn(elem, ms) {
 	elem.style.opacity = 0;
 	elem.style.display = "initial";
-	elem.style.visibility = "visible";
 	if (elem.classList.contains("fade")) {
 		var opacity = 0;
 		var timer = setInterval(function () {
@@ -105,14 +104,12 @@ function fadeOut(elem, ms) {
 				clearInterval(timer);
 				opacity = 0;
 				elem.style.display = "none";
-				elem.style.visibility = "hidden";
 			}
 			elem.style.opacity = opacity;
 		}, 50);
 	} else {
 		elem.style.opacity = 0;
 		elem.style.display = "none";
-		elem.style.visibility = "hidden";
 		var active = document.getElementsByClassName("mydiv");
 		for (var i = active.length - 1; i > -1; i--) {
 			active[i].classList.remove("mydivActive");

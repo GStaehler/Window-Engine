@@ -44,6 +44,14 @@ You can add another button to open you new window :
 <button id="button!"></button>
 ```
 
+### windowGroup
+
+All of the windows must be in one windowGroup :
+
+```html
+<div class="windowGroup"> Your windows ... </div>
+```
+
 ### Fade effect
 
 You can add a fade effect on the windows with the class "fade" :
@@ -66,7 +74,58 @@ Of course you can combine it with the fade effect :
 <div id="mydiv!" class="mydiv fade" style="display: initial;">
 ```
 
-#### Donation
+### Basic Example
+
+```html
+<div class="windowGroup">
+
+	<!---- WINDOW 1 --->
+
+	<div id="mydiv1" class="mydiv" style="display: initial;">
+		<div id="mydiv1header" class="mydivheader purple">
+			<p class="windowTitle">Window Engine</p>
+			<b id="closeButton1">&times;</b>
+		</div>
+		<div class="mainWindow">
+			<p>Welcome to Window Engine !</p>
+			<p>Window Engine helps you start projects that need draggable and beautiful custom windows.</p>
+		</div>
+	</div>
+
+	<!---- WINDOW 2 --->
+
+	<div id="mydiv2" class="mydiv fade">
+		<div id="mydiv2header" class="mydivheader cyan">
+			<p class="windowTitle">Second Window</p>
+			<b id="closeButton2">&times;</b>
+		</div>
+		<div class="mainWindow">
+			<p>Cyan</p>
+			<p>With fade effect !</p>
+		</div>
+	</div>
+
+	<!---- WINDOW 3 --->
+
+	<div id="mydiv3" class="mydiv fade">
+		<div id="mydiv3header" class="mydivheader brown">
+			<p class="windowTitle">Third Window</p>
+			<b id="closeButton3">&times;</b>
+		</div>
+		<div class="mainWindow">
+			<p>Brown</p>
+			<p>With fade effect !</p>
+		</div>
+	</div>
+	
+</div>
+
+<button id="button1">1</button>
+<button id="button2">2</button>
+<button id="button3">3</button>
+```
+
+### Donation
 
 You can support the project by making a donation !
 
