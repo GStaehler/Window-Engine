@@ -85,6 +85,20 @@ Of course you can combine it with the fade effect :
 <div id="mydiv!" class="mydiv fade" style="display: initial;">
 ```
 
+### Size
+
+You can change the size of the window with "small" and "large" :
+
+```html
+<div id="mydiv!" class="mydiv large">
+```
+
+**normal** : 800 x 400
+
+**small** : 600 x 300
+
+**large** : 1000 x 500
+
 ### Basic Example
 
 ```html
@@ -118,7 +132,7 @@ Of course you can combine it with the fade effect :
 
 	<!-- WINDOW 3 -->
 
-	<div id="mydiv3" class="mydiv fade">
+	<div id="mydiv3" class="mydiv fade small">
 		<div id="mydiv3header" class="mydivheader brown">
 			<p class="windowTitle">Third Window</p>
 			<b id="closeButton3">&times;</b>

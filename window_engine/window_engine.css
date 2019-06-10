@@ -49,8 +49,8 @@
 }
 
 .windowGroup {
-    justify-content: center !important;
-    display: flex !important;
+	justify-content: center !important;
+	display: flex !important;
 }
 
 .purple {
@@ -75,4 +75,14 @@
 
 .green {
 	background-color: darkgreen;
+}
+
+.small {
+	width: 600px;
+	height: 300px;
+}
+
+.large {
+	width: 1000px;
+	height: 500px;
 }
