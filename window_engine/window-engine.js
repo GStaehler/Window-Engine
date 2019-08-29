@@ -1,35 +1,31 @@
-// exposed API
+/* Window Engine - MIT License - Copyright (c) 2019 Gauthier Staehler */
 
-function attachWindow(id) {
-	var windowElement = document.getElementById(id)
-	var closeButtonElement = windowElement.querySelector('.closeButton')
-	closeButtonElement.addEventListener('click', () => closeWindow(id))
-	dragElement(windowElement); // should be something like addDragListeners
+var lastWindow = document.getElementsByClassName("windowGroup")[0].lastElementChild.id.substring(5);
+
+for (i = 1; i <= lastWindow; i++) {
+	createWindow(i);
 }
 
-function openWindow(id) {
-	var windowElement = document.getElementById(id)
-	windowElement.style = "position: absolute;";
-	windowElement.style = "top: 80px;";
-	fadeIn(windowElement, 50);
+function createWindow(id) {
+	var isOut;
+	document.getElementById("closeButton" + id).onclick = function () {
+		fadeOut(document.getElementById("mydiv" + id), 50);
+		isOut = true;
+	};
+	document.getElementById("button" + id).onclick = function () {
+		if (document.getElementById("mydiv" + id).style.display === "initial") {
+			isOut = false;
+		}
+		if (isOut) {
+			document.getElementById("mydiv" + id).style = "position: absolute;";
+			document.getElementById("mydiv" + id).style = "top: 80px;";
+			fadeIn(document.getElementById("mydiv" + id), 50);
+		}
+		isOut = false;
+	};
+	dragElement(document.getElementById("mydiv" + id));
+	isOut = true;
 }
-
-function closeWindow(id) {
-	var windowElement = document.getElementById(id)
-	fadeOut(windowElement, 50);
-}
-
-function toggleWindow(id) {
-	var windowElement = document.getElementById(id)
-	var isOpen = windowElement.style.display === 'initial'
-	if (isOpen) {
-		closeWindow(id)
-	} else {
-		openWindow(id)
-	}
-}
-
-// private services
 
 function dragElement(elmnt) {
 	var pos1 = 0,

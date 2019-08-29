@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
 body {
 	background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
 	background-size: cover;
