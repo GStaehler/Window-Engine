@@ -14,7 +14,7 @@ Full demo [here](https://gstaehler.github.io/window.html) !
 
 ### Installation
 
-Download :
+[GET Window Engine](https://gstaehler.github.io/get-window-engine/) :
 
 ```html
 <link rel="stylesheet" href="lib/window-engine.css">
