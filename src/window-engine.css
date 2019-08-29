@@ -40,7 +40,7 @@
 	cursor: default;
 }
 
-[id^="closeButton"] {
+.closeButton {
 	color: white;
 	cursor: pointer;
 	position: relative;
