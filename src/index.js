@@ -1,27 +1,27 @@
 // exposed API
 
 function attachWindow(id) {
-  var windowElement = document.getElementById(id)
+	var windowElement = document.getElementById(id)
 	var closeButtonElement = windowElement.querySelector('.closeButton')
 	closeButtonElement.addEventListener('click', () => closeWindow(id))
-  dragElement(windowElement); // should be something like addDragListeners
+	dragElement(windowElement); // should be something like addDragListeners
 }
 
 function openWindow(id) {
-  var windowElement = document.getElementById(id)
-  windowElement.style = "position: absolute;";
-  windowElement.style = "top: 80px;";
+	var windowElement = document.getElementById(id)
+	windowElement.style = "position: absolute;";
+	windowElement.style = "top: 80px;";
 	fadeIn(windowElement, 50);
 }
 
 function closeWindow(id) {
-  var windowElement = document.getElementById(id)
-  fadeOut(windowElement, 50);
+	var windowElement = document.getElementById(id)
+	fadeOut(windowElement, 50);
 }
 
 function toggleWindow(id) {
 	var windowElement = document.getElementById(id)
-	var isOpen = windowElement.style.display === 'initial' 
+	var isOpen = windowElement.style.display === 'initial'
 	if (isOpen) {
 		closeWindow(id)
 	} else {
