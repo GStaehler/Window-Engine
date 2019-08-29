@@ -1,0 +1,24 @@
+{
+  "name": "window-engine",
+  "version": "0.0.1",
+  "description": "Window engine",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src -o lib/window-engine.min.js && cp src/window-engine.css lib/window-engine.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GStaehler/Window-Engine.git"
+  },
+  "author": "GStaehler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GStaehler/Window-Engine/issues"
+  },
+  "homepage": "https://github.com/GStaehler/Window-Engine#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "babel-preset-minify": "^0.5.1"
+  }
+}

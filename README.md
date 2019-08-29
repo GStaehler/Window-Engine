@@ -17,8 +17,8 @@ Full demo [here](https://gstaehler.github.io/window.html) !
 Download :
 
 ```html
-<link rel="stylesheet" href="window_engine/window_engine.css">
-<script src="window_engine/window_engine.min.js"></script> // End of your file
+<link rel="stylesheet" href="window-engine/window-engine.css">
+<script src="window_engine/window-engine.min.js"></script> // End of your file
 ```
 
 OR Test it first :
@@ -34,7 +34,7 @@ OR Test it first :
 <div id="mydiv!" class="mydiv">
 	<div id="mydiv!header" class="mydivheader color">
 		<p class="windowTitle">Title</p>
-		<b id="closeButton!">&times;</b>
+		<b class="closeButton">&times;</b>
 	</div>
 	<div class="mainWindow">Content</div>
 </div>
