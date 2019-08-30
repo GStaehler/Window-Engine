@@ -10,6 +10,8 @@
 
 Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by **Gauthier Staehler**, for draggable and beautiful windows. Full demo [here](https://gstaehler.github.io/window.html).
 
+&nbsp;
+
 ### Installation
 
 [GET Window Engine](https://gstaehler.github.io/get-window-engine/) :
@@ -25,6 +27,8 @@ OR Test it first :
 <link rel="stylesheet" href="https://gstaehler.github.io/cdn/window-engine.css">
 <script src="https://gstaehler.github.io/cdn/window-engine.min.js"></script> // End of your file
 ```
+
+&nbsp;
 
 ### Structure of a window
 
@@ -43,6 +47,8 @@ OR Test it first :
 
 *if no color, the window is black*
 
+&nbsp;
+
 ### Add a new window
 
 To add a new window, copy the structure above in your html and change ! (if this is your third window, ! = 3 for example)
@@ -53,6 +59,8 @@ You can add another button to open you new window :
 <button id="button!"></button>
 ```
 
+&nbsp;
+
 ### windowGroup
 
 All of the windows must be in one windowGroup :
@@ -61,6 +69,8 @@ All of the windows must be in one windowGroup :
 <div class="windowGroup"> Your windows ... </div>
 ```
 
+&nbsp;
+
 ### Fade effect
 
 You can add a fade effect on the windows with the class "fade" :
@@ -68,6 +78,8 @@ You can add a fade effect on the windows with the class "fade" :
 ```html
 <div id="mydiv!" class="mydiv fade">
 ```
+
+&nbsp;
 
 ### Display
 
@@ -83,6 +95,8 @@ Of course you can combine it with the fade effect :
 <div id="mydiv!" class="mydiv fade" style="display: initial;">
 ```
 
+&nbsp;
+
 ### Size
 
 You can change the size of the window with "small" and "large" :
@@ -91,11 +105,9 @@ You can change the size of the window with "small" and "large" :
 <div id="mydiv!" class="mydiv large">
 ```
 
-**normal** : 800 x 400
+**normal** : 800 x 400; **small** : 600 x 300; **large** : 1000 x 500
 
-**small** : 600 x 300
-
-**large** : 1000 x 500
+&nbsp;
 
 ### Basic Example
 
@@ -146,5 +158,7 @@ You can change the size of the window with "small" and "large" :
 <button id="button2">2</button>
 <button id="button3">3</button>
 ```
+
+&nbsp;
 
 Copyright **Gauthier Staehler**
