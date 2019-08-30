@@ -3,8 +3,8 @@
 [![License: MIT](https://img.shields.io/github/license/GStaehler/Window-Engine.svg?color=brightgreen&label=License)](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE)
 [![Version](https://img.shields.io/github/release/GStaehler/Window-Engine.svg?color=Brightgreen&label=Version)](https://github.com/GStaehler/Window-Engine/releases)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-Brightgreen.svg)](https://www.paypal.me/GauthierStaehler)
-[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window_engine/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/window_engine/window-engine.min.js)
-[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window_engine/window-engine.css.svg?color=green&label=window-engine.css)](https://github.com/GStaehler/Window-Engine/blob/master/window_engine/window-engine.css)
+[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window-engine/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/window-engine/window-engine.min.js)
+[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window-engine/window-engine.css.svg?color=green&label=window-engine.css)](https://github.com/GStaehler/Window-Engine/blob/master/window-engine/window-engine.css)
 
 ![Demo](https://gstaehler.github.io/window_engine/window.png)
 
@@ -15,8 +15,8 @@ Welcome to **Window Engine**.  Window Engine is a lightweight javascript library
 [GET Window Engine](https://gstaehler.github.io/get-window-engine/) :
 
 ```html
-<link rel="stylesheet" href="window_engine/window_engine.css">
-<script src="window_engine/window_engine.min.js"></script> // End of your file
+<link rel="stylesheet" href="window-engine/window-engine.css">
+<script src="window-engine/window-engine.min.js"></script> // End of your file
 ```
 
 OR Test it first :
@@ -147,11 +147,5 @@ You can change the size of the window with "small" and "large" :
 <button id="button2">2</button>
 <button id="button3">3</button>
 ```
-
-### Donation
-
-You can support the project by making a donation !
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-Brightgreen.svg)](https://www.paypal.me/GauthierStaehler)
 
 Copyright **Gauthier Staehler**

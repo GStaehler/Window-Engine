@@ -1,6 +1,6 @@
 /* Window Engine - MIT License - Copyright (c) 2019 Gauthier Staehler */
 
-var lastWindow = document.getElementsByClassName("windowGroup")[0].lastElementChild.id.substring(5);
+const lastWindow = document.getElementsByClassName("windowGroup")[0].lastElementChild.id.substring(5);
 
 for (i = 1; i <= lastWindow; i++) {
 	createWindow(i);
@@ -90,7 +90,7 @@ function fadeIn(elem, ms) {
 	} else {
 		elem.style.opacity = 0.9;
 		var active = document.getElementsByClassName("mydiv");
-		for (var i = active.length - 1; i > -1; i--) {
+		for (i = active.length - 1; i > -1; i--) {
 			active[i].classList.remove("mydivActive");
 		}
 		elem.className += " mydivActive";
@@ -113,7 +113,7 @@ function fadeOut(elem, ms) {
 		elem.style.opacity = 0;
 		elem.style.display = "none";
 		var active = document.getElementsByClassName("mydiv");
-		for (var i = active.length - 1; i > -1; i--) {
+		for (i = active.length - 1; i > -1; i--) {
 			active[i].classList.remove("mydivActive");
 		}
 		elem.className += " mydivActive";
