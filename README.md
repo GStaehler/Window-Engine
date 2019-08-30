@@ -24,8 +24,8 @@ Full demo [here](https://gstaehler.github.io/window.html) !
 OR Test it first :
 
 ```html
-<link rel="stylesheet" href="https://gstaehler.github.io/window_engine/cdn/window-engine.css">
-<script src="https://gstaehler.github.io/window_engine/cdn/window-engine.min.js"></script> // End of your file
+<link rel="stylesheet" href="https://gstaehler.github.io/cdn/window-engine.css">
+<script src="https://gstaehler.github.io/cdn/window-engine.min.js"></script> // End of your file
 ```
 
 ### Structure of a window
