@@ -111,7 +111,6 @@ You can change the size of the window with "small" and "large" :
 		</div>
 		<div class="mainWindow">
 			<p>Welcome to Window Engine !</p>
-			<p>Window Engine helps you start projects that need draggable and beautiful custom windows.</p>
 		</div>
 	</div>
 
