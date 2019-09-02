@@ -1,5 +1,10 @@
 /* Window Engine - MIT License - Copyright (c) 2019 Gauthier Staehler */
 
+var metaTag = document.createElement('meta');
+metaTag.name = "viewport"
+metaTag.content = "user-scalable=0"
+document.getElementsByTagName('head')[0].appendChild(metaTag);
+
 const lastWindow = document.getElementsByClassName("windowGroup")[0].lastElementChild.id.substring(5);
 
 for (i = 1; i <= lastWindow; i++) {
@@ -32,19 +37,37 @@ function dragElement(elmnt) {
 		pos2 = 0,
 		pos3 = 0,
 		pos4 = 0;
+	if ("ontouchstart" in document.documentElement) {
+		var pos1touch = 0,
+			pos2touch = 0,
+			pos3touch = 0,
+			pos4touch = 0;
+	}
 	if (document.getElementById(elmnt.id + "header")) {
 		document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+		document.getElementById(elmnt.id + "header").ontouchstart = dragMouseDown;
 	} else {
 		elmnt.onmousedown = dragMouseDown;
+		elmnt.ontouchstart = dragMouseDown;
 	}
 
 	function dragMouseDown(e) {
 		e = e || window.event;
-		e.preventDefault();
+		if (!"ontouchstart" in document.documentElement) {
+			e.preventDefault();
+		}
 		pos3 = e.clientX;
 		pos4 = e.clientY;
+		if ("ontouchstart" in document.documentElement) {
+			try {
+				pos3touch = e.touches[0].clientX;
+				pos4touch = e.touches[0].clientY;
+			} catch {}
+		}
 		document.onmouseup = closeDragElement;
 		document.onmousemove = elementDrag;
+		document.ontouchend = closeDragElement;
+		document.ontouchmove = elementDrag;
 		var active = document.getElementsByClassName("mydiv");
 		for (var i = active.length - 1; i > -1; i--) {
 			active[i].classList.remove("mydivActive");
@@ -55,17 +78,28 @@ function dragElement(elmnt) {
 	function elementDrag(e) {
 		e = e || window.event;
 		e.preventDefault();
-		pos1 = pos3 - e.clientX;
-		pos2 = pos4 - e.clientY;
-		pos3 = e.clientX;
-		pos4 = e.clientY;
-		elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-		elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+		if ("ontouchstart" in document.documentElement) {
+			pos1touch = pos3touch - e.touches[0].clientX;
+			pos2touch = pos4touch - e.touches[0].clientY;
+			pos3touch = e.touches[0].clientX;
+			pos4touch = e.touches[0].clientY;
+			elmnt.style.top = (elmnt.offsetTop - pos2touch) + "px";
+			elmnt.style.left = (elmnt.offsetLeft - pos1touch) + "px";
+		} else {
+			pos1 = pos3 - e.clientX;
+			pos2 = pos4 - e.clientY;
+			pos3 = e.clientX;
+			pos4 = e.clientY;
+			elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+			elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+		}
 	}
 
 	function closeDragElement() {
 		document.onmouseup = null;
 		document.onmousemove = null;
+		document.ontouchend = null;
+		document.ontouchmove = null;
 	}
 }
 
