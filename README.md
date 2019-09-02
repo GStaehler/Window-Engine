@@ -8,7 +8,7 @@
 
 ![Demo](https://gstaehler.github.io/window_engine/window.png)
 
-Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by **Gauthier Staehler**, for draggable and beautiful windows. Full demo [here](https://gstaehler.github.io/window.html).
+Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by **Gauthier Staehler**, for draggable and beautiful windows. Full demo [here](https://gstaehler.github.io/window-engine).
 
 &nbsp;
 
