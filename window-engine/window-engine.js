@@ -49,7 +49,6 @@ function dragElement(elmnt) {
 	}
 
 	function dragMouseDown(e) {
-		e = e || window.event;
 		if (!"ontouchstart" in document.documentElement) {
 			e.preventDefault();
 		}
@@ -66,14 +65,13 @@ function dragElement(elmnt) {
 		document.ontouchend = closeDragElement;
 		document.ontouchmove = elementDrag;
 		var active = document.getElementsByClassName("mydiv");
-		for (var i = active.length - 1; i > -1; i--) {
+		for (i = active.length - 1; i > -1; i--) {
 			active[i].classList.remove("mydivActive");
 		}
 		document.getElementById(elmnt.id).className += " mydivActive";
 	}
 
 	function elementDrag(e) {
-		e = e || window.event;
 		e.preventDefault();
 		if ("ontouchstart" in document.documentElement) {
 			pos1touch = pos3touch - e.touches[0].clientX;
@@ -113,7 +111,7 @@ function fadeIn(elem, ms) {
 			}
 			elem.style.opacity = opacity;
 			var active = document.getElementsByClassName("mydiv");
-			for (var i = active.length - 1; i > -1; i--) {
+			for (i = active.length - 1; i > -1; i--) {
 				active[i].classList.remove("mydivActive");
 			}
 			elem.className += " mydivActive";
