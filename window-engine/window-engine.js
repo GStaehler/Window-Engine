@@ -1,8 +1,8 @@
 /* Window Engine - MIT License - Copyright (c) 2019 Gauthier Staehler */
 
 var metaTag = document.createElement('meta');
-metaTag.name = "viewport"
-metaTag.content = "user-scalable=0"
+metaTag.name = "viewport";
+metaTag.content = "user-scalable=0";
 document.getElementsByTagName('head')[0].appendChild(metaTag);
 
 const lastWindow = document.getElementsByClassName("windowGroup")[0].lastElementChild.id.substring(5);
@@ -46,9 +46,6 @@ function dragElement(elmnt) {
 	if (document.getElementById(elmnt.id + "header")) {
 		document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
 		document.getElementById(elmnt.id + "header").ontouchstart = dragMouseDown;
-	} else {
-		elmnt.onmousedown = dragMouseDown;
-		elmnt.ontouchstart = dragMouseDown;
 	}
 
 	function dragMouseDown(e) {
