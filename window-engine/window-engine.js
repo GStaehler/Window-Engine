@@ -141,7 +141,6 @@ function fadeOut(elem, ms) {
 			elem.style.opacity = opacity;
 		}, 50);
 	} else {
-		elem.style.opacity = 0;
 		elem.style.display = "none";
 		var active = document.getElementsByClassName("mydiv");
 		for (i = active.length - 1; i > -1; i--) {
