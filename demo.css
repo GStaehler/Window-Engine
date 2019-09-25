@@ -1,5 +1,7 @@
 body {
-	background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+	/* background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"); */
+    background: linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2);
+    background-attachment: fixed;
 	background-size: cover;
 	margin: 0;
 	height: 100%;
@@ -11,7 +13,7 @@ body {
 footer {
 	position: fixed;
 	bottom: 0px;
-	background-color: rebeccapurple;
+	/* background-color: rebeccapurple; */
 	width: 100%;
 	height: 42px;
 	padding: 4px;
@@ -24,7 +26,7 @@ footer {
 header {
 	position: fixed;
 	top: 0px;
-	background-color: rebeccapurple;
+	background: linear-gradient(to right, rebeccapurple, #dbd4b4, #7aa1d2);
 	width: 100%;
 	height: 20px;
 	opacity: 0.5;
@@ -38,6 +40,7 @@ p {
 	cursor: default;
 	margin-top: 0;
 	margin-bottom: 1rem;
+    filter: none !important;
 }
 
 [id^="button"] {
