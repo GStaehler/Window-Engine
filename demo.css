@@ -13,12 +13,9 @@ footer {
 	bottom: 0px;
 	background-color: rebeccapurple;
 	width: 100%;
-	height: 42px;
+	height: 48px;
 	padding: 4px;
-	padding-left: 8px;
-	box-shadow: 2px 2px 2px 2px black;
-	justify-content: flex-start !important;
-	display: block;
+	box-shadow: 0px 2px 2px 1px black;
 }
 
 header {
@@ -46,5 +43,5 @@ p {
 	cursor: pointer;
 	font-size: 30px;
 	position: relative;
-	bottom: 6px;
+	bottom: 2px;
 }
