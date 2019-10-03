@@ -5,7 +5,7 @@ metaTag.name = "viewport";
 metaTag.content = "user-scalable=0";
 document.getElementsByTagName('head')[0].appendChild(metaTag);
 
-const lastWindow = document.getElementsByClassName("windowGroup")[0].lastElementChild.id.substring(5);
+const lastWindow = document.getElementsByClassName("windowGroup")[0].lastElementChild.id.substring(6);
 
 for (i = 1; i <= lastWindow; i++) {
 	createWindow(i);
@@ -14,21 +14,21 @@ for (i = 1; i <= lastWindow; i++) {
 function createWindow(id) {
 	var isOut;
 	document.getElementById("closeButton" + id).onclick = function () {
-		fadeOut(document.getElementById("mydiv" + id), 50);
+		fadeOut(document.getElementById("window" + id), 50);
 		isOut = true;
 	};
 	document.getElementById("button" + id).onclick = function () {
-		if (document.getElementById("mydiv" + id).style.display === "initial") {
+		if (document.getElementById("window" + id).style.display === "initial") {
 			isOut = false;
 		}
 		if (isOut) {
-			document.getElementById("mydiv" + id).style = "position: absolute;";
-			document.getElementById("mydiv" + id).style = "top: 80px;";
-			fadeIn(document.getElementById("mydiv" + id), 50);
+			document.getElementById("window" + id).style = "position: absolute;";
+			document.getElementById("window" + id).style = "top: 80px;";
+			fadeIn(document.getElementById("window" + id), 50);
 		}
 		isOut = false;
 	};
-	dragElement(document.getElementById("mydiv" + id));
+	dragElement(document.getElementById("window" + id));
 	isOut = true;
 }
 
@@ -64,7 +64,7 @@ function dragElement(elmnt) {
 		document.onmousemove = elementDrag;
 		document.ontouchend = closeDragElement;
 		document.ontouchmove = elementDrag;
-		var active = document.getElementsByClassName("mydiv");
+		var active = document.getElementsByClassName("window");
 		for (i = active.length - 1; i > -1; i--) {
 			active[i].classList.remove("mydivActive");
 		}
@@ -110,7 +110,7 @@ function fadeIn(elem, ms) {
 				opacity = 0.9;
 			}
 			elem.style.opacity = opacity;
-			var active = document.getElementsByClassName("mydiv");
+			var active = document.getElementsByClassName("window");
 			for (i = active.length - 1; i > -1; i--) {
 				active[i].classList.remove("mydivActive");
 			}
@@ -118,7 +118,7 @@ function fadeIn(elem, ms) {
 		}, 50);
 	} else {
 		elem.style.opacity = 0.9;
-		var active = document.getElementsByClassName("mydiv");
+		var active = document.getElementsByClassName("window");
 		for (i = active.length - 1; i > -1; i--) {
 			active[i].classList.remove("mydivActive");
 		}
@@ -140,7 +140,7 @@ function fadeOut(elem, ms) {
 		}, 50);
 	} else {
 		elem.style.display = "none";
-		var active = document.getElementsByClassName("mydiv");
+		var active = document.getElementsByClassName("window");
 		for (i = active.length - 1; i > -1; i--) {
 			active[i].classList.remove("mydivActive");
 		}

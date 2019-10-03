@@ -33,8 +33,8 @@ OR Test it first :
 ### Structure of a window
 
 ```html
-<div id="mydiv!" class="mydiv">
-	<div id="mydiv!header" class="mydivheader color">
+<div id="window!" class="window">
+	<div id="window!header" class="color">
 		<p class="windowTitle">Title</p>
 		<b id="closeButton!">&times;</b>
 	</div>
@@ -76,7 +76,7 @@ All of the windows must be in one windowGroup :
 You can add a fade effect on the windows with the class "fade" :
 
 ```html
-<div id="mydiv!" class="mydiv fade">
+<div id="window!" class="window fade">
 ```
 
 &nbsp;
@@ -86,13 +86,13 @@ You can add a fade effect on the windows with the class "fade" :
 If you want your window to be visible without clicking on a button the first time :
 
 ```html
-<div id="mydiv!" class="mydiv" style="display: initial;">
+<div id="window!" class="window" style="display: initial;">
 ```
 
 Of course you can combine it with the fade effect :
 
 ```html
-<div id="mydiv!" class="mydiv fade" style="display: initial;">
+<div id="window!" class="window fade" style="display: initial;">
 ```
 
 &nbsp;
@@ -102,7 +102,7 @@ Of course you can combine it with the fade effect :
 You can change the size of the window with "small" and "large" :
 
 ```html
-<div id="mydiv!" class="mydiv large">
+<div id="window!" class="window large">
 ```
 
 **normal** : 800 x 400; **small** : 600 x 300; **large** : 1000 x 500
@@ -116,8 +116,8 @@ You can change the size of the window with "small" and "large" :
 
 	<!-- WINDOW 1 -->
 
-	<div id="mydiv1" class="mydiv" style="display: initial;">
-		<div id="mydiv1header" class="mydivheader purple">
+	<div id="window1" class="window" style="display: initial;">
+		<div id="window1header" class="purple">
 			<p class="windowTitle">Window Engine</p>
 			<b id="closeButton1">&times;</b>
 		</div>
@@ -128,8 +128,8 @@ You can change the size of the window with "small" and "large" :
 
 	<!-- WINDOW 2 -->
 
-	<div id="mydiv2" class="mydiv fade">
-		<div id="mydiv2header" class="mydivheader cyan">
+	<div id="window2" class="window fade">
+		<div id="window2header" class="cyan">
 			<p class="windowTitle">Second Window</p>
 			<b id="closeButton2">&times;</b>
 		</div>
@@ -141,8 +141,8 @@ You can change the size of the window with "small" and "large" :
 
 	<!-- WINDOW 3 -->
 
-	<div id="mydiv3" class="mydiv fade small">
-		<div id="mydiv3header" class="mydivheader brown">
+	<div id="window3" class="window fade small">
+		<div id="window3header" class="brown">
 			<p class="windowTitle">Third Window</p>
 			<b id="closeButton3">&times;</b>
 		</div>
