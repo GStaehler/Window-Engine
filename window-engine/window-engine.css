@@ -25,7 +25,7 @@
 	touch-action: none;
 }
 
-.mydivActive {
+.windowActive {
 	z-index: 100;
 }
 
