@@ -20,8 +20,8 @@
 	color: #fff;
 	border-radius: 4px 4px 0px 0px;
 	height: 40px;
-	justify-content: space-between !important;
-	display: flex !important;
+	justify-content: space-between;
+	display: flex;
 	touch-action: none;
 }
 
@@ -52,8 +52,8 @@
 }
 
 .windowGroup {
-	justify-content: center !important;
-	display: flex !important;
+	justify-content: center;
+	display: flex;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	line-height: 1.5;
 }
