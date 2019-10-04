@@ -36,7 +36,6 @@
 
 .mainWindow {
 	padding: 20px;
-	cursor: default;
 }
 
 [id^="closeButton"] {
