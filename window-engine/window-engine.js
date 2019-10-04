@@ -22,8 +22,7 @@ function createWindow(id) {
 			isOut = false;
 		}
 		if (isOut) {
-			document.getElementById("window" + id).style = "position: absolute;";
-			document.getElementById("window" + id).style = "top: 80px;";
+			document.getElementById("window" + id).cssText = "position: absolute; top: 80px;";
 			fadeIn(document.getElementById("window" + id), 50);
 		}
 		isOut = false;
