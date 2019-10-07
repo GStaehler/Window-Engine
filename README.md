@@ -5,6 +5,7 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-Brightgreen.svg)](https://www.paypal.me/GauthierStaehler)
 [![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window-engine/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/window-engine/window-engine.min.js)
 [![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window-engine/window-engine.css.svg?color=green&label=window-engine.css)](https://github.com/GStaehler/Window-Engine/blob/master/window-engine/window-engine.css)
+[![CodeFactor](https://www.codefactor.io/repository/github/gstaehler/window-engine/badge)](https://www.codefactor.io/repository/github/gstaehler/window-engine)
 
 ![Demo](https://gstaehler.github.io/window_engine/window.png)
 
