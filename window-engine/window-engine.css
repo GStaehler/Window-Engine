@@ -7,7 +7,7 @@
 	background-color: #f1f1f1;
 	width: 800px;
 	height: 400px;
-	border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0 0;
 	box-shadow: 8px 8px 6px -6px black;
 	opacity: 0.9;
 	display: none;
@@ -18,7 +18,7 @@
 	z-index: 10;
 	background-color: black;
 	color: #fff;
-	border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0 0;
 	height: 40px;
 	justify-content: space-between;
 	display: flex;
