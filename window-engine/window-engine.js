@@ -8,7 +8,7 @@ document.getElementsByTagName('head')[0].appendChild(metaTag);
 const lastWindow = document.getElementsByClassName("windowGroup")[0].lastElementChild.id.substring(6);
 const active = document.getElementsByClassName("window");
 
-for (i = 1; i <= lastWindow; i++) {
+for (let i = 1; i <= lastWindow; i++) {
     createWindow(i);
 }
 
@@ -65,7 +65,7 @@ function dragElement(elmnt) {
         document.onmousemove = elementDrag;
         document.ontouchend = closeDragElement;
         document.ontouchmove = elementDrag;
-        for (i = active.length - 1; i > -1; i--) {
+        for (let i = active.length - 1; i > -1; i--) {
             active[i].classList.remove("windowActive");
         }
         document.getElementById(elmnt.id).className += " windowActive";
@@ -117,7 +117,7 @@ function fadeIn(elem, ms) {
         }, 50);
     } else {
         elem.style.opacity = "0.9";
-        for (i = active.length - 1; i > -1; i--) {
+        for (let i = active.length - 1; i > -1; i--) {
             active[i].classList.remove("windowActive");
         }
         elem.className += " windowActive";
