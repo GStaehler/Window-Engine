@@ -65,9 +65,7 @@ function dragElement(elmnt) {
         document.onmousemove = elementDrag;
         document.ontouchend = closeDragElement;
         document.ontouchmove = elementDrag;
-        for (let i = active.length - 1; i > -1; i--) {
-            active[i].classList.remove("windowActive");
-        }
+        activeWindow();
         document.getElementById(elmnt.id).className += " windowActive";
     }
 
@@ -117,9 +115,7 @@ function fadeIn(elem, ms) {
         }, 50);
     } else {
         elem.style.opacity = "0.9";
-        for (let i = active.length - 1; i > -1; i--) {
-            active[i].classList.remove("windowActive");
-        }
+        activeWindow();
         elem.className += " windowActive";
     }
 }
@@ -138,9 +134,13 @@ function fadeOut(elem, ms) {
         }, 50);
     } else {
         elem.style.display = "none";
-        for (let i = active.length - 1; i > -1; i--) {
-            active[i].classList.remove("windowActive");
-        }
+        activeWindow();
         elem.className += " windowActive";
+    }
+}
+
+function activeWindow() {
+    for (let i = active.length - 1; i > -1; i--) {
+        active[i].classList.remove("windowActive");
     }
 }
