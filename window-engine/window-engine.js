@@ -110,7 +110,7 @@ function fadeIn(elem, ms) {
                 opacity = 0.9;
             }
             elem.style.opacity = opacity;
-            for (i = active.length - 1; i > -1; i--) {
+            for (let i = active.length - 1; i > -1; i--) {
                 active[i].classList.remove("windowActive");
             }
             elem.className += " windowActive";
