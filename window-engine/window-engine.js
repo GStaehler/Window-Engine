@@ -1,6 +1,6 @@
 /* Window Engine - MIT License - Copyright (c) 2019 Gauthier Staehler */
 
-var metaTag = document.createElement('meta');
+const metaTag = document.createElement('meta');
 metaTag.name = "viewport";
 metaTag.content = "user-scalable=0";
 document.getElementsByTagName('head')[0].appendChild(metaTag);
@@ -116,7 +116,7 @@ function fadeIn(elem, ms) {
             elem.className += " windowActive";
         }, 50);
     } else {
-        elem.style.opacity = 0.9;
+        elem.style.opacity = "0.9";
         for (i = active.length - 1; i > -1; i--) {
             active[i].classList.remove("windowActive");
         }
