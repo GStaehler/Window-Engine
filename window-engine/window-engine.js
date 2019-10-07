@@ -138,7 +138,7 @@ function fadeOut(elem, ms) {
         }, 50);
     } else {
         elem.style.display = "none";
-        for (i = active.length - 1; i > -1; i--) {
+        for (let i = active.length - 1; i > -1; i--) {
             active[i].classList.remove("windowActive");
         }
         elem.className += " windowActive";
