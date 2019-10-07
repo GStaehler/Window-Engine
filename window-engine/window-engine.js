@@ -6,6 +6,7 @@ metaTag.content = "user-scalable=0";
 document.getElementsByTagName('head')[0].appendChild(metaTag);
 
 const lastWindow = document.getElementsByClassName("windowGroup")[0].lastElementChild.id.substring(6);
+const active = document.getElementsByClassName("window");
 
 for (i = 1; i <= lastWindow; i++) {
     createWindow(i);
@@ -64,7 +65,6 @@ function dragElement(elmnt) {
         document.onmousemove = elementDrag;
         document.ontouchend = closeDragElement;
         document.ontouchmove = elementDrag;
-        var active = document.getElementsByClassName("window");
         for (i = active.length - 1; i > -1; i--) {
             active[i].classList.remove("windowActive");
         }
@@ -110,7 +110,6 @@ function fadeIn(elem, ms) {
                 opacity = 0.9;
             }
             elem.style.opacity = opacity;
-            var active = document.getElementsByClassName("window");
             for (i = active.length - 1; i > -1; i--) {
                 active[i].classList.remove("windowActive");
             }
@@ -118,7 +117,6 @@ function fadeIn(elem, ms) {
         }, 50);
     } else {
         elem.style.opacity = 0.9;
-        var active = document.getElementsByClassName("window");
         for (i = active.length - 1; i > -1; i--) {
             active[i].classList.remove("windowActive");
         }
@@ -140,7 +138,6 @@ function fadeOut(elem, ms) {
         }, 50);
     } else {
         elem.style.display = "none";
-        var active = document.getElementsByClassName("window");
         for (i = active.length - 1; i > -1; i--) {
             active[i].classList.remove("windowActive");
         }
