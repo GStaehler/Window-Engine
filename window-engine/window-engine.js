@@ -15,7 +15,7 @@ for (let i = 1; i <= lastWindow; i++) {
 function createWindow(id) {
     var isOut;
     document.getElementById("closeButton" + id).onclick = function () {
-        fadeOut(document.getElementById("window" + id), 50);
+        fadeOut(document.getElementById("window" + id));
         isOut = true;
     };
     document.getElementById("button" + id).onclick = function () {
@@ -25,7 +25,7 @@ function createWindow(id) {
         if (isOut) {
             document.getElementById("window" + id).style = "position: absolute;";
             document.getElementById("window" + id).style = "top: 80px;";
-            fadeIn(document.getElementById("window" + id), 50);
+            fadeIn(document.getElementById("window" + id));
         }
         isOut = false;
     };
@@ -96,13 +96,13 @@ function dragElement(elmnt) {
     }
 }
 
-function fadeIn(elem, ms) {
+function fadeIn(elem) {
     elem.style.opacity = 0;
     elem.style.display = "initial";
     if (elem.classList.contains("fade")) {
         var opacity = 0;
         var timer = setInterval(function () {
-            opacity += 10 / ms;
+            opacity += 30 / 70;
             if (opacity >= 1) {
                 clearInterval(timer);
                 opacity = 0.9;
@@ -120,11 +120,11 @@ function fadeIn(elem, ms) {
     }
 }
 
-function fadeOut(elem, ms) {
+function fadeOut(elem) {
     if (elem.classList.contains("fade")) {
         var opacity = 1;
         var timer = setInterval(function () {
-            opacity -= 10 / ms;
+            opacity -= 30 / 70;
             if (opacity <= 0) {
                 clearInterval(timer);
                 opacity = 0;
