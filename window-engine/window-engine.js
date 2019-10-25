@@ -96,10 +96,10 @@ function dragElement(elmnt) {
     }
 }
 
-function fadeIn(elem) {
-    elem.style.opacity = 0;
-    elem.style.display = "initial";
-    if (elem.classList.contains("fade")) {
+function fadeIn(elmnt) {
+    elmnt.style.opacity = 0;
+    elmnt.style.display = "initial";
+    if (elmnt.classList.contains("fade")) {
         var opacity = 0;
         var timer = setInterval(function () {
             opacity += 30 / 70;
@@ -107,35 +107,33 @@ function fadeIn(elem) {
                 clearInterval(timer);
                 opacity = 0.9;
             }
-            elem.style.opacity = opacity;
-            for (let i = active.length - 1; i > -1; i--) {
-                active[i].classList.remove("windowActive");
-            }
-            elem.className += " windowActive";
+            elmnt.style.opacity = opacity;
+            activeWindow();
+            elmnt.className += " windowActive";
         }, 50);
     } else {
-        elem.style.opacity = "0.9";
+        elmnt.style.opacity = "0.9";
         activeWindow();
-        elem.className += " windowActive";
+        elmnt.className += " windowActive";
     }
 }
 
-function fadeOut(elem) {
-    if (elem.classList.contains("fade")) {
+function fadeOut(elmnt) {
+    if (elmnt.classList.contains("fade")) {
         var opacity = 1;
         var timer = setInterval(function () {
             opacity -= 30 / 70;
             if (opacity <= 0) {
                 clearInterval(timer);
                 opacity = 0;
-                elem.style.display = "none";
+                elmnt.style.display = "none";
             }
-            elem.style.opacity = opacity;
+            elmnt.style.opacity = opacity;
         }, 50);
     } else {
-        elem.style.display = "none";
+        elmnt.style.display = "none";
         activeWindow();
-        elem.className += " windowActive";
+        elmnt.className += " windowActive";
     }
 }
 
