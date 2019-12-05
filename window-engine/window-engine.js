@@ -20,6 +20,8 @@ function createWindow(id) {
     };
     document.getElementById("button" + id).onclick = function () {
         if (document.getElementById("window" + id).style.display === "initial") {
+			activeWindow();
+			document.getElementById("window" + id).className += " windowActive";
             isOut = false;
         }
         if (isOut) {
