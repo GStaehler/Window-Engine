@@ -18,8 +18,8 @@ Welcome to **Window Engine**.  Window Engine is a lightweight javascript library
 [GET Window Engine](https://gstaehler.github.io/get-window-engine/) :
 
 ```html
-<link rel="stylesheet" href="window-engine/window-engine.css">
-<script src="window-engine/window-engine.min.js"></script> // End of your file
+<link rel="stylesheet" href="src/window-engine.css">
+<script src="dist/window-engine.min.js"></script> // End of your file
 ```
 
 OR Test it first :
