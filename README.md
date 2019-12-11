@@ -3,8 +3,8 @@
 [![License: MIT](https://img.shields.io/github/license/GStaehler/Window-Engine.svg?color=brightgreen&label=License)](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE)
 [![Version](https://img.shields.io/github/release/GStaehler/Window-Engine.svg?color=Brightgreen&label=Version)](https://github.com/GStaehler/Window-Engine/releases)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-Brightgreen.svg)](https://www.paypal.me/GauthierStaehler)
-[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window-engine/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/window-engine/window-engine.min.js)
-[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window-engine/window-engine.css.svg?color=green&label=window-engine.css)](https://github.com/GStaehler/Window-Engine/blob/master/window-engine/window-engine.css)
+[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.min.js)
+[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.css.svg?color=green&label=window-engine.min.css)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.css)
 [![CodeFactor](https://www.codefactor.io/repository/github/gstaehler/window-engine/badge)](https://www.codefactor.io/repository/github/gstaehler/window-engine)
 
 ![Demo](https://gstaehler.github.io/window_engine/window.png)
@@ -18,7 +18,7 @@ Welcome to **Window Engine**.  Window Engine is a lightweight javascript library
 [GET Window Engine](https://gstaehler.github.io/get-window-engine/) :
 
 ```html
-<link rel="stylesheet" href="src/window-engine.css">
+<link rel="stylesheet" href="dist/window-engine.min.css">
 <script src="dist/window-engine.min.js"></script> // End of your file
 ```
 
