@@ -35,7 +35,7 @@ OR Test it first :
 
 ```html
 <div id="window!" class="window">
-	<div id="window!header" class="color">
+	<div class="color">
 		<p class="windowTitle">Title</p>
 	</div>
 	<div class="mainWindow">Content</div>
@@ -117,7 +117,7 @@ You can change the size of the window with "small" and "large" :
 	<!-- WINDOW 1 -->
 
 	<div id="window1" class="window" style="display: initial;">
-		<div id="window1header" class="purple">
+		<div class="purple">
 			<p class="windowTitle">Window Engine</p>
 		</div>
 		<div class="mainWindow">
@@ -128,7 +128,7 @@ You can change the size of the window with "small" and "large" :
 	<!-- WINDOW 2 -->
 
 	<div id="window2" class="window fade">
-		<div id="window2header" class="cyan">
+		<div class="cyan">
 			<p class="windowTitle">Second Window</p>
 		</div>
 		<div class="mainWindow">
@@ -140,7 +140,7 @@ You can change the size of the window with "small" and "large" :
 	<!-- WINDOW 3 -->
 
 	<div id="window3" class="window fade small">
-		<div id="window3header" class="brown">
+		<div class="brown">
 			<p class="windowTitle">Third Window</p>
 		</div>
 		<div class="mainWindow">
