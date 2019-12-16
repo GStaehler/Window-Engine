@@ -25,7 +25,7 @@ Welcome to **Window Engine**.  Window Engine is a lightweight javascript library
 OR Test it first :
 
 ```html
-<link rel="stylesheet" href="https://gstaehler.github.io/cdn/window-engine.css">
+<link rel="stylesheet" href="https://gstaehler.github.io/cdn/window-engine.min.css">
 <script src="https://gstaehler.github.io/cdn/window-engine.min.js"></script> // End of your file
 ```
 
