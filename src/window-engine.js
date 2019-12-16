@@ -14,6 +14,12 @@ for (let i = 1; i <= lastWindow; i++) {
 
 function createWindow(id) {
     var isOut;
+
+    let createCloseButton = document.createElement("b");
+    createCloseButton.id = "closeButton" + id;
+    createCloseButton.innerHTML = "×";
+    document.getElementById("window" + id + "header").appendChild(createCloseButton);
+
     document.getElementById("closeButton" + id).onclick = function () {
         fadeOut(document.getElementById("window" + id));
         isOut = true;

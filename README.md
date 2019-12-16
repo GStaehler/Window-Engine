@@ -37,7 +37,6 @@ OR Test it first :
 <div id="window!" class="window">
 	<div id="window!header" class="color">
 		<p class="windowTitle">Title</p>
-		<b id="closeButton!">&times;</b>
 	</div>
 	<div class="mainWindow">Content</div>
 </div>
@@ -120,7 +119,6 @@ You can change the size of the window with "small" and "large" :
 	<div id="window1" class="window" style="display: initial;">
 		<div id="window1header" class="purple">
 			<p class="windowTitle">Window Engine</p>
-			<b id="closeButton1">&times;</b>
 		</div>
 		<div class="mainWindow">
 			<p>Welcome to Window Engine !</p>
@@ -132,7 +130,6 @@ You can change the size of the window with "small" and "large" :
 	<div id="window2" class="window fade">
 		<div id="window2header" class="cyan">
 			<p class="windowTitle">Second Window</p>
-			<b id="closeButton2">&times;</b>
 		</div>
 		<div class="mainWindow">
 			<p>Cyan</p>
@@ -145,7 +142,6 @@ You can change the size of the window with "small" and "large" :
 	<div id="window3" class="window fade small">
 		<div id="window3header" class="brown">
 			<p class="windowTitle">Third Window</p>
-			<b id="closeButton3">&times;</b>
 		</div>
 		<div class="mainWindow">
 			<p>Brown</p>
