@@ -16,7 +16,6 @@ function createWindow(id) {
     var isOut;
 
     let headerID = document.getElementById("window" + id).firstElementChild;
-    console.log(headerID);
     headerID.id = "window" + id + "header";
 
     let createCloseButton = document.createElement("b");
