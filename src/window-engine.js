@@ -13,7 +13,7 @@ for (let i = 1; i <= lastWindow; i++) {
 }
 
 function createWindow(id) {
-    var isOut;
+    let isOut;
 
     let headerID = document.getElementById("window" + id).firstElementChild;
     headerID.id = "window" + id + "header";
@@ -29,8 +29,7 @@ function createWindow(id) {
     };
     document.getElementById("button" + id).onclick = function () {
         if (document.getElementById("window" + id).style.display === "initial") {
-			activeWindow();
-			document.getElementById("window" + id).className += " windowActive";
+			activeWindow(document.getElementById("window" + id));
             isOut = false;
         }
         if (isOut) {
@@ -76,8 +75,7 @@ function dragElement(elmnt) {
         document.onmousemove = elementDrag;
         document.ontouchend = closeDragElement;
         document.ontouchmove = elementDrag;
-        activeWindow();
-        document.getElementById(elmnt.id).className += " windowActive";
+        activeWindow(document.getElementById(elmnt.id));
     }
 
     function elementDrag(e) {
@@ -119,13 +117,11 @@ function fadeIn(elmnt) {
                 opacity = 0.9;
             }
             elmnt.style.opacity = opacity;
-            activeWindow();
-            elmnt.className += " windowActive";
+            activeWindow(elmnt);
         }, 50);
     } else {
         elmnt.style.opacity = "0.9";
-        activeWindow();
-        elmnt.className += " windowActive";
+        activeWindow(elmnt);
     }
 }
 
@@ -143,13 +139,13 @@ function fadeOut(elmnt) {
         }, 50);
     } else {
         elmnt.style.display = "none";
-        activeWindow();
-        elmnt.className += " windowActive";
+        activeWindow(elmnt);
     }
 }
 
-function activeWindow() {
+function activeWindow(elmnt) {
     for (let i = active.length - 1; i > -1; i--) {
         active[i].classList.remove("windowActive");
+        elmnt.className += " windowActive";
     }
 }
