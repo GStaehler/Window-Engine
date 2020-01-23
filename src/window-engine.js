@@ -13,9 +13,8 @@ for (let i = 1; i <= lastWindow; i++) {
 }
 
 function createWindow(id) {
-    let isOut;
-
-    let headerID = document.getElementById("window" + id).firstElementChild;
+    let windowID = document.getElementById("window" + id);
+    let headerID = windowID.firstElementChild;
     headerID.id = "window" + id + "header";
 
     let createCloseButton = document.createElement("b");
@@ -24,23 +23,18 @@ function createWindow(id) {
     document.getElementById("window" + id + "header").appendChild(createCloseButton);
 
     document.getElementById("closeButton" + id).onclick = function () {
-        fadeOut(document.getElementById("window" + id));
-        isOut = true;
+        fadeOut(windowID);
     };
     document.getElementById("button" + id).onclick = function () {
-        if (document.getElementById("window" + id).style.display === "initial") {
-			activeWindow(document.getElementById("window" + id));
-            isOut = false;
+        if (windowID.style.display === "initial") {
+			activeWindow(windowID);
+        } else {
+            windowID.style = "position: absolute;";
+            windowID.style = "top: 80px;";
+            fadeIn(windowID);
         }
-        if (isOut) {
-            document.getElementById("window" + id).style = "position: absolute;";
-            document.getElementById("window" + id).style = "top: 80px;";
-            fadeIn(document.getElementById("window" + id));
-        }
-        isOut = false;
     };
-    dragElement(document.getElementById("window" + id));
-    isOut = true;
+    dragElement(windowID);
 }
 
 function dragElement(elmnt) {
