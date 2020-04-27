@@ -2,7 +2,12 @@
   "name": "window-engine",
   "version": "4.3.5",
   "description": "Lightweight and touchscreen friendly js library for draggable windows",
-  "main": "window-engine.js",
+  "main": "dist/window-engine.min.js",
+  "unpkg": "dist/window-engine.min.js",
+  "files": [
+    "dist/window-engine.min.js",
+    "dist/window-engine.min.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "minify": "uglifyjs src/window-engine.js --compress --mangle --warn --comments all --output dist/window-engine.min.js && uglifycss src/window-engine.css --output dist/window-engine.min.css"
