@@ -63,7 +63,7 @@ function dragElement(elmnt) {
             try {
                 pos3touch = e.touches[0].clientX;
                 pos4touch = e.touches[0].clientY;
-            } catch {}
+            } catch(error) {}
         }
         document.onmouseup = closeDragElement;
         document.onmousemove = elementDrag;
