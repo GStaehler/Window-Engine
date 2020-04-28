@@ -6,7 +6,7 @@
 [![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.min.js)
 [![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.css.svg?color=green&label=window-engine.min.css)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.css)
 [![CodeFactor](https://www.codefactor.io/repository/github/gstaehler/window-engine/badge)](https://www.codefactor.io/repository/github/gstaehler/window-engine)
-![npm](https://img.shields.io/npm/dw/window-engine)
+[![npm](https://img.shields.io/npm/dw/window-engine)](https://www.npmjs.com/package/window-engine)
 
 ![Demo](https://gstaehler.github.io/window_engine/window.png)
 
@@ -24,15 +24,15 @@ Download ZIP :
 ```
 
 OR Install with NPM :
-```html
+```sh
 npm i window-engine
 ```
 
 OR Test it first :
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/window-engine@4.3.5/dist/window-engine.min.css">
-<script src="https://unpkg.com/window-engine@4.3.5/dist/window-engine.min.js"></script> // End of your file
+<link rel="stylesheet" href="https://unpkg.com/window-engine@latest/dist/window-engine.min.css">
+<script src="https://unpkg.com/window-engine@latest/dist/window-engine.min.js"></script> // End of your file
 ```
 
 &nbsp;
@@ -47,19 +47,19 @@ OR Test it first :
 	<div class="mainWindow">Content</div>
 </div>
 ```
-*! is the number of the window*
+**!** *is the number of the window*
 
-*color is the color of the window : purple, orange, brown, cyan, crimson, green*
+**color** *is the color of the window : purple, orange, brown, cyan, crimson, green*
 
-*if no color, the window is black*
+*default color is black*
 
 &nbsp;
 
 ### Add a new window
 
-To add a new window, copy the structure above in your html and change ! (if this is your third window, ! = 3 for example)
+To add a new window, copy the structure above in your html and change **!** (if this is your third window, **!** = 3 for example)
 
-You can add another button to open you new window :
+Add another button to open you new window :
 
 ```html
 <button id="button!"></button>
@@ -69,7 +69,7 @@ You can add another button to open you new window :
 
 ### windowGroup
 
-All of the windows must be in one windowGroup :
+All of the windows must be in the same windowGroup :
 
 ```html
 <div class="windowGroup"> Your windows ... </div>
@@ -79,7 +79,7 @@ All of the windows must be in one windowGroup :
 
 ### Fade effect
 
-You can add a fade effect on the windows with the class "fade" :
+Add a fade effect on the windows with the class "fade" :
 
 ```html
 <div id="window!" class="window fade">
@@ -89,13 +89,13 @@ You can add a fade effect on the windows with the class "fade" :
 
 ### Display
 
-If you want your window to be visible without clicking on a button the first time :
+The following code makes the window visible without a button click :
 
 ```html
 <div id="window!" class="window" style="display: initial;">
 ```
 
-Of course you can combine it with the fade effect :
+Of course it is possible to combine it with the fade effect :
 
 ```html
 <div id="window!" class="window fade" style="display: initial;">
@@ -105,7 +105,7 @@ Of course you can combine it with the fade effect :
 
 ### Size
 
-You can change the size of the window with "small" and "large" :
+Change the size of the window with "small" and "large" :
 
 ```html
 <div id="window!" class="window large">

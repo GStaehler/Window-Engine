@@ -1,7 +1,7 @@
 {
   "name": "window-engine",
-  "version": "4.3.6",
-  "description": "Lightweight and touchscreen friendly js library for draggable windows",
+  "version": "4.3.7",
+  "description": "Lightweight and touchscreen friendly zero-dependency JavaScript library for draggable windows",
   "main": "dist/window-engine.min.js",
   "unpkg": "dist/window-engine.min.js",
   "files": [
@@ -19,7 +19,8 @@
   "keywords": [
     "draggable",
     "window",
-    "modals"
+    "modals",
+    "engine"
   ],
   "author": "Gauthier Staehler",
   "license": "MIT",
