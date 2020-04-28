@@ -6,10 +6,11 @@
 [![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.min.js)
 [![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.css.svg?color=green&label=window-engine.min.css)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.css)
 [![CodeFactor](https://www.codefactor.io/repository/github/gstaehler/window-engine/badge)](https://www.codefactor.io/repository/github/gstaehler/window-engine)
+![npm](https://img.shields.io/npm/dw/window-engine)
 
 ![Demo](https://gstaehler.github.io/window_engine/window.png)
 
-Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by **Gauthier Staehler**, for draggable and beautiful windows. Full demo [here](https://gstaehler.github.io/window-engine).
+Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by **Gauthier Staehler**, for draggable windows. Demo [here](https://gstaehler.github.io/window-engine).
 
 &nbsp;
 
@@ -20,6 +21,11 @@ Download ZIP :
 ```html
 <link rel="stylesheet" href="dist/window-engine.min.css">
 <script src="dist/window-engine.min.js"></script> // End of your file
+```
+
+OR Install with NPM :
+```html
+npm i window-engine
 ```
 
 OR Test it first :

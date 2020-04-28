@@ -1,6 +1,6 @@
 {
   "name": "window-engine",
-  "version": "4.3.5",
+  "version": "4.3.6",
   "description": "Lightweight and touchscreen friendly js library for draggable windows",
   "main": "dist/window-engine.min.js",
   "unpkg": "dist/window-engine.min.js",
