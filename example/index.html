@@ -4,40 +4,38 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Gauthier Staehler">
-	<meta name="description" content="Window Engine is a lightweight javascript library for draggable and beautiful windows">
+	<meta name="description" content="Lightweight and touchscreen friendly zero-dependency JavaScript library for draggable windows">
 	<meta name="keywords" content="JavaScript, CSS, Window, Draggable">
 	<title>Window Engine - JavaScript Library</title>
 	<link rel="stylesheet" href="demo.css">
-	<link rel="stylesheet" href="window-engine/window-engine.css">
+	<link rel="stylesheet" href="../src/window-engine.css">
 </head>
 
 <body>
 
 	<header>
-		<p>Window Engine 4.0</p>
+		<p>Window Engine 4.3.7</p>
 	</header>
 
 	<div class="windowGroup">
 
 		<!-- WINDOW 1 -->
 
-		<div id="mydiv1" class="mydiv" style="display: initial;">
-			<div id="mydiv1header" class="mydivheader purple">
+		<div id="window1" class="window" style="display: initial;">
+			<div class="purple">
 				<p class="windowTitle">Window Engine</p>
-				<b id="closeButton1">&times;</b>
 			</div>
 			<div class="mainWindow">
 				<p>Welcome to Window Engine !</p>
-				<p>Window Engine helps you start projects that need draggable and beautiful custom windows.</p>
+				<p>Window Engine helps you start projects that need draggable windows.</p>
 			</div>
 		</div>
 
 		<!-- WINDOW 2 -->
 
-		<div id="mydiv2" class="mydiv fade">
-			<div id="mydiv2header" class="mydivheader cyan">
+		<div id="window2" class="window fade">
+			<div class="cyan">
 				<p class="windowTitle">Second Window</p>
-				<b id="closeButton2">&times;</b>
 			</div>
 			<div class="mainWindow">
 				<p>Cyan</p>
@@ -47,10 +45,9 @@
 
 		<!-- WINDOW 3 -->
 
-		<div id="mydiv3" class="mydiv fade">
-			<div id="mydiv3header" class="mydivheader brown">
+		<div id="window3" class="window fade">
+			<div class="brown">
 				<p class="windowTitle">Third Window</p>
-				<b id="closeButton3">&times;</b>
 			</div>
 			<div class="mainWindow">
 				<p>Brown</p>
@@ -60,10 +57,9 @@
 
 		<!-- WINDOW 4 -->
 
-		<div id="mydiv4" class="mydiv small">
-			<div id="mydiv4header" class="mydivheader orange">
+		<div id="window4" class="window small">
+			<div class="orange">
 				<p class="windowTitle">Fourth Window</p>
-				<b id="closeButton4">&times;</b>
 			</div>
 			<div class="mainWindow">
 				<p>Orange - Small</p>
@@ -72,10 +68,9 @@
 
 		<!-- WINDOW 5 -->
 
-		<div id="mydiv5" class="mydiv large">
-			<div id="mydiv5header" class="mydivheader crimson">
+		<div id="window5" class="window large">
+			<div class="crimson">
 				<p class="windowTitle">Fifth Window</p>
-				<b id="closeButton5">&times;</b>
 			</div>
 			<div class="mainWindow">
 				<p>Crimson - Large</p>
@@ -84,10 +79,9 @@
 
 		<!-- WINDOW 6 -->
 
-		<div id="mydiv6" class="mydiv">
-			<div id="mydiv6header" class="mydivheader green">
+		<div id="window6" class="window">
+			<div class="green">
 				<p class="windowTitle">Sixth Window</p>
-				<b id="closeButton6">&times;</b>
 			</div>
 			<div class="mainWindow">
 				<p>Green</p>
@@ -96,7 +90,7 @@
 
 	</div>
 
-	<footer id="footer">
+	<footer>
 		<span id="button1">1</span>
 		<span id="button2">2</span>
 		<span id="button3">3</span>
@@ -109,4 +103,4 @@
 
 </html>
 
-<script src="window-engine/window-engine.js"></script>
+<script src="../src/window-engine.js"></script>

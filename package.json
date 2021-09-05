@@ -1,0 +1,36 @@
+{
+  "name": "window-engine",
+  "version": "4.3.7",
+  "description": "Lightweight and touchscreen friendly zero-dependency JavaScript library for draggable windows",
+  "main": "dist/window-engine.min.js",
+  "unpkg": "dist/window-engine.min.js",
+  "files": [
+    "dist/window-engine.min.js",
+    "dist/window-engine.min.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "uglifyjs src/window-engine.js --compress --mangle --warn --comments all --output dist/window-engine.min.js && uglifycss src/window-engine.css --output dist/window-engine.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GStaehler/Window-Engine.git"
+  },
+  "keywords": [
+    "draggable",
+    "window",
+    "modals",
+    "engine"
+  ],
+  "author": "Gauthier Staehler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GStaehler/Window-Engine/issues"
+  },
+  "homepage": "https://github.com/GStaehler/Window-Engine#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "uglify-es": "^3.3.9",
+    "uglifycss": "0.0.29"
+  }
+}

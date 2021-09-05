@@ -10,20 +10,17 @@ body {
 
 footer {
 	position: fixed;
-	bottom: 0px;
+	bottom: 0;
 	background-color: rebeccapurple;
 	width: 100%;
-	height: 42px;
+	height: 48px;
 	padding: 4px;
-	padding-left: 8px;
-	box-shadow: 2px 2px 2px 2px black;
-	justify-content: flex-start !important;
-	display: block;
+	box-shadow: 0 2px 2px 1px black;
 }
 
 header {
 	position: fixed;
-	top: 0px;
+	top: 0;
 	background-color: rebeccapurple;
 	width: 100%;
 	height: 20px;
@@ -31,13 +28,11 @@ header {
 	padding: 4px;
 	color: white;
 	font-size: 12px;
-	display: block;
 }
 
 p {
 	cursor: default;
 	margin-top: 0;
-	margin-bottom: 1rem;
 }
 
 [id^="button"] {
@@ -46,5 +41,5 @@ p {
 	cursor: pointer;
 	font-size: 30px;
 	position: relative;
-	bottom: 6px;
+	bottom: 2px;
 }

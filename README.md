@@ -3,29 +3,36 @@
 [![License: MIT](https://img.shields.io/github/license/GStaehler/Window-Engine.svg?color=brightgreen&label=License)](https://github.com/GStaehler/Window-Engine/blob/master/LICENSE)
 [![Version](https://img.shields.io/github/release/GStaehler/Window-Engine.svg?color=Brightgreen&label=Version)](https://github.com/GStaehler/Window-Engine/releases)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-Brightgreen.svg)](https://www.paypal.me/GauthierStaehler)
-[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window-engine/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/window-engine/window-engine.min.js)
-[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/window-engine/window-engine.css.svg?color=green&label=window-engine.css)](https://github.com/GStaehler/Window-Engine/blob/master/window-engine/window-engine.css)
+[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.min.js)
+[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.css.svg?color=green&label=window-engine.min.css)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.css)
+[![CodeFactor](https://www.codefactor.io/repository/github/gstaehler/window-engine/badge)](https://www.codefactor.io/repository/github/gstaehler/window-engine)
+[![npm](https://img.shields.io/npm/dw/window-engine)](https://www.npmjs.com/package/window-engine)
 
 ![Demo](https://gstaehler.github.io/window_engine/window.png)
 
-Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by **Gauthier Staehler**, for draggable and beautiful windows. Full demo [here](https://gstaehler.github.io/window.html).
+Welcome to **Window Engine**.  Window Engine is a lightweight javascript library, developed by **Gauthier Staehler**, for draggable windows. Demo [here](https://gstaehler.github.io/window-engine).
 
 &nbsp;
 
 ### Installation
 
-[GET Window Engine](https://gstaehler.github.io/get-window-engine/) :
+Download ZIP :
 
 ```html
-<link rel="stylesheet" href="window-engine/window-engine.css">
-<script src="window-engine/window-engine.min.js"></script> // End of your file
+<link rel="stylesheet" href="dist/window-engine.min.css">
+<script src="dist/window-engine.min.js"></script> // End of your file
+```
+
+OR Install with NPM :
+```sh
+npm i window-engine
 ```
 
 OR Test it first :
 
 ```html
-<link rel="stylesheet" href="https://gstaehler.github.io/cdn/window-engine.css">
-<script src="https://gstaehler.github.io/cdn/window-engine.min.js"></script> // End of your file
+<link rel="stylesheet" href="https://unpkg.com/window-engine@latest/dist/window-engine.min.css">
+<script src="https://unpkg.com/window-engine@latest/dist/window-engine.min.js"></script> // End of your file
 ```
 
 &nbsp;
@@ -33,27 +40,26 @@ OR Test it first :
 ### Structure of a window
 
 ```html
-<div id="mydiv!" class="mydiv">
-	<div id="mydiv!header" class="mydivheader color">
+<div id="window!" class="window">
+	<div class="color">
 		<p class="windowTitle">Title</p>
-		<b id="closeButton!">&times;</b>
 	</div>
 	<div class="mainWindow">Content</div>
 </div>
 ```
-*! is the number of the window*
+**!** *is the number of the window*
 
-*color is the color of the window : purple, orange, brown, cyan, crimson, green*
+**color** *is the color of the window : purple, orange, brown, cyan, crimson, green*
 
-*if no color, the window is black*
+*default color is black*
 
 &nbsp;
 
 ### Add a new window
 
-To add a new window, copy the structure above in your html and change ! (if this is your third window, ! = 3 for example)
+To add a new window, copy the structure above in your html and change **!** (if this is your third window, **!** = 3 for example)
 
-You can add another button to open you new window :
+Add another button to open you new window :
 
 ```html
 <button id="button!"></button>
@@ -63,7 +69,7 @@ You can add another button to open you new window :
 
 ### windowGroup
 
-All of the windows must be in one windowGroup :
+All of the windows must be in the same windowGroup :
 
 ```html
 <div class="windowGroup"> Your windows ... </div>
@@ -73,36 +79,36 @@ All of the windows must be in one windowGroup :
 
 ### Fade effect
 
-You can add a fade effect on the windows with the class "fade" :
+Add a fade effect on the windows with the class "fade" :
 
 ```html
-<div id="mydiv!" class="mydiv fade">
+<div id="window!" class="window fade">
 ```
 
 &nbsp;
 
 ### Display
 
-If you want your window to be visible without clicking on a button the first time :
+The following code makes the window visible without a button click :
 
 ```html
-<div id="mydiv!" class="mydiv" style="display: initial;">
+<div id="window!" class="window" style="display: initial;">
 ```
 
-Of course you can combine it with the fade effect :
+Of course it is possible to combine it with the fade effect :
 
 ```html
-<div id="mydiv!" class="mydiv fade" style="display: initial;">
+<div id="window!" class="window fade" style="display: initial;">
 ```
 
 &nbsp;
 
 ### Size
 
-You can change the size of the window with "small" and "large" :
+Change the size of the window with "small" and "large" :
 
 ```html
-<div id="mydiv!" class="mydiv large">
+<div id="window!" class="window large">
 ```
 
 **normal** : 800 x 400; **small** : 600 x 300; **large** : 1000 x 500
@@ -116,10 +122,9 @@ You can change the size of the window with "small" and "large" :
 
 	<!-- WINDOW 1 -->
 
-	<div id="mydiv1" class="mydiv" style="display: initial;">
-		<div id="mydiv1header" class="mydivheader purple">
+	<div id="window1" class="window" style="display: initial;">
+		<div class="purple">
 			<p class="windowTitle">Window Engine</p>
-			<b id="closeButton1">&times;</b>
 		</div>
 		<div class="mainWindow">
 			<p>Welcome to Window Engine !</p>
@@ -128,10 +133,9 @@ You can change the size of the window with "small" and "large" :
 
 	<!-- WINDOW 2 -->
 
-	<div id="mydiv2" class="mydiv fade">
-		<div id="mydiv2header" class="mydivheader cyan">
+	<div id="window2" class="window fade">
+		<div class="cyan">
 			<p class="windowTitle">Second Window</p>
-			<b id="closeButton2">&times;</b>
 		</div>
 		<div class="mainWindow">
 			<p>Cyan</p>
@@ -141,10 +145,9 @@ You can change the size of the window with "small" and "large" :
 
 	<!-- WINDOW 3 -->
 
-	<div id="mydiv3" class="mydiv fade small">
-		<div id="mydiv3header" class="mydivheader brown">
+	<div id="window3" class="window fade small">
+		<div class="brown">
 			<p class="windowTitle">Third Window</p>
-			<b id="closeButton3">&times;</b>
 		</div>
 		<div class="mainWindow">
 			<p>Brown</p>
