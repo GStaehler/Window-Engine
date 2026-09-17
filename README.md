@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/github/release/GStaehler/Window-Engine.svg?color=Brightgreen&label=Version)](https://github.com/GStaehler/Window-Engine/releases)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-Brightgreen.svg)](https://www.paypal.me/GauthierStaehler)
 [![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.js.svg?color=green&label=window-engine.min.js)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.min.js)
-[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.css.svg?color=green&label=window-engine.min.css)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.css)
+[![GitHub file size in bytes](https://img.shields.io/github/size/GStaehler/Window_Engine/dist/window-engine.min.css.svg?color=green&label=window-engine.min.css)](https://github.com/GStaehler/Window-Engine/blob/master/dist/window-engine.min.css)
 [![CodeFactor](https://www.codefactor.io/repository/github/gstaehler/window-engine/badge)](https://www.codefactor.io/repository/github/gstaehler/window-engine)
 [![npm](https://img.shields.io/npm/dw/window-engine)](https://www.npmjs.com/package/window-engine)
 
